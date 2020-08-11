@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XLaAiWufeqe8vJHG5775v/ijPb/dPeXaoJK9hmsRIS9t2g1Tj7F5duZOv815BJ2ZqQPPLXtB91GT5Lq2RfBRJw==",
+  "dgSpecHash": "NC/cButJNOvgymhw3HubMcY82/7+/zA0WrnnT6TdlLc9bCGb4UXF/dcTVdzLKfJiCR7ORso7PT8KzimgHAKC+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\m.mitic\\source\\repos\\levi9_internship\\OnlineMarks\\OnlineMarks.UnitTests\\OnlineMarks.UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.UnitTests\\OnlineMarks.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\m.mitic\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\m.mitic\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
