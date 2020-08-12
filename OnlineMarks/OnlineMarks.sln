@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMarks.Api", "OnlineMarks.Api\OnlineMarks.Api.csproj", "{00A8C49F-D2A1-44E4-9FD5-B42939281B80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMarks.Api", "OnlineMarks.Api\OnlineMarks.Api.csproj", "{00A8C49F-D2A1-44E4-9FD5-B42939281B80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMarks.Data.Models", "OnlineMarks.Data.Models\OnlineMarks.Data.Models.csproj", "{AE2EA805-3BE8-4466-BD11-5DB841FBA5E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMarks.Data.Models", "OnlineMarks.Data.Models\OnlineMarks.Data.Models.csproj", "{AE2EA805-3BE8-4466-BD11-5DB841FBA5E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMarks.Data.Repositories", "OnlineMarks.Data.Repositories\OnlineMarks.Data.Repositories.csproj", "{D8B4DA03-E370-4C00-8C06-0ABC67E516BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMarks.Data.Repositories", "OnlineMarks.Data.Repositories\OnlineMarks.Data.Repositories.csproj", "{D8B4DA03-E370-4C00-8C06-0ABC67E516BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMarks.Data.ViewModels", "OnlineMarks.Data.ViewModels\OnlineMarks.Data.ViewModels.csproj", "{96977578-A13F-4359-9317-51BC3A04B3F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMarks.Data.ViewModels", "OnlineMarks.Data.ViewModels\OnlineMarks.Data.ViewModels.csproj", "{96977578-A13F-4359-9317-51BC3A04B3F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMarks.Interfaces", "OnlineMarks.Interfaces\OnlineMarks.Interfaces.csproj", "{7123D1BC-DC8A-417F-87C2-CEFDC70B8848}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMarks.Interfaces", "OnlineMarks.Interfaces\OnlineMarks.Interfaces.csproj", "{7123D1BC-DC8A-417F-87C2-CEFDC70B8848}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMarks.Maps", "OnlineMarks.Maps\OnlineMarks.Maps.csproj", "{083E4514-BA29-47D3-9393-E80A30E7936E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMarks.Maps", "OnlineMarks.Maps\OnlineMarks.Maps.csproj", "{083E4514-BA29-47D3-9393-E80A30E7936E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMarks.Services", "OnlineMarks.Services\OnlineMarks.Services.csproj", "{4516D93C-270F-44E5-986B-1B50C19666ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMarks.Services", "OnlineMarks.Services\OnlineMarks.Services.csproj", "{4516D93C-270F-44E5-986B-1B50C19666ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMarks.UnitTests", "OnlineMarks.UnitTests\OnlineMarks.UnitTests.csproj", "{74E9320C-5F69-41C7-8789-66DE07932AC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMarks.UnitTests", "OnlineMarks.UnitTests\OnlineMarks.UnitTests.csproj", "{74E9320C-5F69-41C7-8789-66DE07932AC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMarks.Controllers", "OnlineMarks.Controllers\OnlineMarks.Controllers.csproj", "{10C6AE4A-1B1F-4CF5-86FF-B2BBCA5A2CAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{74E9320C-5F69-41C7-8789-66DE07932AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74E9320C-5F69-41C7-8789-66DE07932AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74E9320C-5F69-41C7-8789-66DE07932AC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C6AE4A-1B1F-4CF5-86FF-B2BBCA5A2CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C6AE4A-1B1F-4CF5-86FF-B2BBCA5A2CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C6AE4A-1B1F-4CF5-86FF-B2BBCA5A2CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C6AE4A-1B1F-4CF5-86FF-B2BBCA5A2CAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
