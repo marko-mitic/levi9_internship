@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineMarks.Data.Models\OnlineMarks.Data.Models.csproj" />
+  </ItemGroup>
+
 </Project>

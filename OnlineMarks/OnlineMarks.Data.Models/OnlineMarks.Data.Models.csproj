@@ -8,8 +8,4 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.6" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\OnlineMarks.Interfaces\OnlineMarks.Interfaces.csproj" />
-  </ItemGroup>
-
 </Project>
