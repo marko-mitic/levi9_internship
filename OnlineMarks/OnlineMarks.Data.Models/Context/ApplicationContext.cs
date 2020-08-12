@@ -7,7 +7,7 @@ using System.Text;
 
 namespace OnlineMarks.Data.Models.Context
 {
-    public class ApplicationContext : IdentityDbContext<User>, IApplicationContext
+    public class ApplicationContext : IdentityDbContext<User, UserRole, Guid>, IApplicationContext
     {
         private IDbContextTransaction dbContextTransaction;
 
@@ -18,10 +18,10 @@ namespace OnlineMarks.Data.Models.Context
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            builder.Entity<User>().ToTable("Users");
+            base.OnModelCreating(builder);
         }
 
-        public DbSet<User> Users { get; set; } //Db sets should be made from models that extend user
+        public new DbSet<User> Users { get; set; } //Db sets should be made from models that extend user
 
         public new void SaveChanges()
         {
