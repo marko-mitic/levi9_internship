@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "hXuXqlSlsPlEmrWagAExLcOcb1ygWBkalNn785mxOMfMkkIRsUhYtvFEYkeLzPiazZu1rz+URCW56G1tMbgdkg==",
+  "dgSpecHash": "I7MsNBgUHvxSqi00kE7KWnKECk6Nn+nHnuN0G3xO7gJBascY/sJqHMrRpZ9i/llkvjivAMw/QwpD6quEvkUbPA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ja\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }
