@@ -1319,24 +1319,13 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.6",
-          "OnlineMarks.Interfaces": "1.0.0"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.6"
         },
         "compile": {
           "bin/placeholder/OnlineMarks.Data.Models.dll": {}
         },
         "runtime": {
           "bin/placeholder/OnlineMarks.Data.Models.dll": {}
-        }
-      },
-      "OnlineMarks.Interfaces/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/OnlineMarks.Interfaces.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/OnlineMarks.Interfaces.dll": {}
         }
       }
     }
@@ -5100,11 +5089,6 @@
       "type": "project",
       "path": "../OnlineMarks.Data.Models/OnlineMarks.Data.Models.csproj",
       "msbuildProject": "../OnlineMarks.Data.Models/OnlineMarks.Data.Models.csproj"
-    },
-    "OnlineMarks.Interfaces/1.0.0": {
-      "type": "project",
-      "path": "../OnlineMarks.Interfaces/OnlineMarks.Interfaces.csproj",
-      "msbuildProject": "../OnlineMarks.Interfaces/OnlineMarks.Interfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
