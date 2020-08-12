@@ -7,7 +7,7 @@ using System.Text;
 
 namespace OnlineMarks.Data.Models.Context
 {
-    public class ApplicationContext : IdentityDbContext<User>, IApplicationContext
+    public class ApplicationContext : IdentityDbContext<User>
     {
         private IDbContextTransaction dbContextTransaction;
 

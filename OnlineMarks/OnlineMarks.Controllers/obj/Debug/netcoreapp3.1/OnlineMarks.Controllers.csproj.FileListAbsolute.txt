@@ -1,0 +1,14 @@
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\bin\Debug\netcoreapp3.1\OnlineMarks.Controllers.deps.json
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\bin\Debug\netcoreapp3.1\OnlineMarks.Controllers.dll
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\bin\Debug\netcoreapp3.1\OnlineMarks.Controllers.pdb
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\bin\Debug\netcoreapp3.1\OnlineMarks.Data.Models.dll
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\bin\Debug\netcoreapp3.1\OnlineMarks.Interfaces.dll
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\bin\Debug\netcoreapp3.1\OnlineMarks.Interfaces.pdb
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\bin\Debug\netcoreapp3.1\OnlineMarks.Data.Models.pdb
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.csprojAssemblyReference.cache
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.AssemblyInfoInputs.cache
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.AssemblyInfo.cs
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.csproj.CoreCompileInputs.cache
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.csproj.CopyComplete
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.dll
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.pdb

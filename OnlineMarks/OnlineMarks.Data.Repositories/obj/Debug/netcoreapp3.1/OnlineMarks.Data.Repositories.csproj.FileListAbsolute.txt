@@ -6,3 +6,9 @@ C:\Users\m.mitic\source\repos\levi9_internship\OnlineMarks\OnlineMarks.Data.Repo
 C:\Users\m.mitic\source\repos\levi9_internship\OnlineMarks\OnlineMarks.Data.Repositories\obj\Debug\netcoreapp3.1\OnlineMarks.Data.Repositories.AssemblyInfo.cs
 C:\Users\m.mitic\source\repos\levi9_internship\OnlineMarks\OnlineMarks.Data.Repositories\obj\Debug\netcoreapp3.1\OnlineMarks.Data.Repositories.dll
 C:\Users\m.mitic\source\repos\levi9_internship\OnlineMarks\OnlineMarks.Data.Repositories\obj\Debug\netcoreapp3.1\OnlineMarks.Data.Repositories.pdb
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Data.Repositories\bin\Debug\netcoreapp3.1\OnlineMarks.Data.Models.dll
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Data.Repositories\bin\Debug\netcoreapp3.1\OnlineMarks.Interfaces.dll
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Data.Repositories\bin\Debug\netcoreapp3.1\OnlineMarks.Data.Models.pdb
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Data.Repositories\bin\Debug\netcoreapp3.1\OnlineMarks.Interfaces.pdb
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Data.Repositories\obj\Debug\netcoreapp3.1\OnlineMarks.Data.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Data.Repositories\obj\Debug\netcoreapp3.1\OnlineMarks.Data.Repositories.csproj.CopyComplete

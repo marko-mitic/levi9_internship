@@ -6,3 +6,4 @@ C:\Users\m.mitic\source\repos\levi9_internship\OnlineMarks\OnlineMarks.Maps\obj\
 C:\Users\m.mitic\source\repos\levi9_internship\OnlineMarks\OnlineMarks.Maps\obj\Debug\netcoreapp3.1\OnlineMarks.Maps.csproj.CoreCompileInputs.cache
 C:\Users\m.mitic\source\repos\levi9_internship\OnlineMarks\OnlineMarks.Maps\obj\Debug\netcoreapp3.1\OnlineMarks.Maps.dll
 C:\Users\m.mitic\source\repos\levi9_internship\OnlineMarks\OnlineMarks.Maps\obj\Debug\netcoreapp3.1\OnlineMarks.Maps.pdb
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Maps\obj\Debug\netcoreapp3.1\OnlineMarks.Maps.csprojAssemblyReference.cache

@@ -1,16 +1,17 @@
 ﻿using OnlineMarks.Data.Models;
 using OnlineMarks.Data.Repositories;
+using OnlineMarks.Interfaces.Repository;
 using OnlineMarks.Interfaces.Services;
 using System;
 using System.Collections.Generic;
 
 namespace OnlineMarks.Services
 {
-    public class UserServices : IUserService
+    public class UserService : IUserService
     {
-        private readonly UserRepository _userRepository;
+        private readonly IUserRepository _userRepository;
 
-        public UserServices(UserRepository userRepository)
+        public UserService(IUserRepository userRepository)
         {
             _userRepository = userRepository;
         }
