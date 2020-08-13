@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\OnlineMarks.Data.Models\OnlineMarks.Data.Models.csproj" />
     <ProjectReference Include="..\OnlineMarks.Interfaces\OnlineMarks.Interfaces.csproj" />
   </ItemGroup>
 

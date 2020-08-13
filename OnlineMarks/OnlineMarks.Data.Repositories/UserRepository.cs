@@ -1,19 +1,34 @@
-﻿using OnlineMarks.Data.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using OnlineMarks.Data.Models;
+using OnlineMarks.Data.Models.Context;
 using OnlineMarks.Interfaces.Repository;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace OnlineMarks.Data.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        public User Add(User user)
+        private readonly ApplicationContext _applicationContext;
+        public UserRepository(ApplicationContext applicationContext)
         {
-            throw new NotImplementedException();
+            _applicationContext = applicationContext;
         }
 
-        public User Get(string username)
+        public void Add(User user)
         {
-            throw new NotImplementedException();
+            _applicationContext.Users.Add(user);
+        }
+
+        public User Get(string userId)
+        {
+            return _applicationContext.Users.FirstOrDefault(x => x.Id == userId);
+        }
+
+        public List<User> GetAll()
+        {
+            return _applicationContext.Users.ToList();
         }
     }
 }

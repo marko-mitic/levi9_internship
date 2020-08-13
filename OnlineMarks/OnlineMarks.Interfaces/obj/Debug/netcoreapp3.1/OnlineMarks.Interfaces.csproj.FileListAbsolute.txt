@@ -7,3 +7,6 @@ C:\Users\m.mitic\source\repos\levi9_internship\OnlineMarks\OnlineMarks.Interface
 C:\Users\m.mitic\source\repos\levi9_internship\OnlineMarks\OnlineMarks.Interfaces\obj\Debug\netcoreapp3.1\OnlineMarks.Interfaces.csproj.CoreCompileInputs.cache
 C:\Users\m.mitic\source\repos\levi9_internship\OnlineMarks\OnlineMarks.Interfaces\obj\Debug\netcoreapp3.1\OnlineMarks.Interfaces.dll
 C:\Users\m.mitic\source\repos\levi9_internship\OnlineMarks\OnlineMarks.Interfaces\obj\Debug\netcoreapp3.1\OnlineMarks.Interfaces.pdb
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Interfaces\bin\Debug\netcoreapp3.1\OnlineMarks.Data.Models.dll
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Interfaces\bin\Debug\netcoreapp3.1\OnlineMarks.Data.Models.pdb
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Interfaces\obj\Debug\netcoreapp3.1\OnlineMarks.Interfaces.csproj.CopyComplete
