@@ -12,3 +12,17 @@ C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controlle
 C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.csproj.CopyComplete
 C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.dll
 C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.pdb
+C:\Users\Ja\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\bin\Debug\netcoreapp3.1\OnlineMarks.Controllers.deps.json
+C:\Users\Ja\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\bin\Debug\netcoreapp3.1\OnlineMarks.Controllers.dll
+C:\Users\Ja\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\bin\Debug\netcoreapp3.1\OnlineMarks.Controllers.pdb
+C:\Users\Ja\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\bin\Debug\netcoreapp3.1\OnlineMarks.Data.Models.dll
+C:\Users\Ja\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\bin\Debug\netcoreapp3.1\OnlineMarks.Interfaces.dll
+C:\Users\Ja\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\bin\Debug\netcoreapp3.1\OnlineMarks.Interfaces.pdb
+C:\Users\Ja\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\bin\Debug\netcoreapp3.1\OnlineMarks.Data.Models.pdb
+C:\Users\Ja\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.csprojAssemblyReference.cache
+C:\Users\Ja\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.AssemblyInfoInputs.cache
+C:\Users\Ja\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.AssemblyInfo.cs
+C:\Users\Ja\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.csproj.CoreCompileInputs.cache
+C:\Users\Ja\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.csproj.CopyComplete
+C:\Users\Ja\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.dll
+C:\Users\Ja\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Controllers\obj\Debug\netcoreapp3.1\OnlineMarks.Controllers.pdb

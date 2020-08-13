@@ -13,8 +13,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OnlineMarks.Data.Models.Context;
 using OnlineMarks.Data.Repositories;
+using OnlineMarks.Interfaces.Maps;
 using OnlineMarks.Interfaces.Repository;
 using OnlineMarks.Interfaces.Services;
+using OnlineMarks.Maps.UserMap;
 using OnlineMarks.Services;
 
 namespace OnlineMarks.Api
@@ -43,6 +45,7 @@ namespace OnlineMarks.Api
             //services.AddControllers(options => options.EnableEndpointRouting = false);
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserViewUserMap, UserViewUserMap>();
 
         }
 

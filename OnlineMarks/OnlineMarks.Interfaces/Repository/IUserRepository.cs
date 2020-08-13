@@ -8,7 +8,7 @@ namespace OnlineMarks.Interfaces.Repository
     public interface IUserRepository
     {
         void Add(User user);
-        User Get(string userId);
+        User Get(Guid userId);
         List<User> GetAll();
     }
 }

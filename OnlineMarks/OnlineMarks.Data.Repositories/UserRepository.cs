@@ -21,7 +21,7 @@ namespace OnlineMarks.Data.Repositories
             _applicationContext.Users.Add(user);
         }
 
-        public User Get(string userId)
+        public User Get(Guid userId)
         {
             return _applicationContext.Users.FirstOrDefault(x => x.Id == userId);
         }

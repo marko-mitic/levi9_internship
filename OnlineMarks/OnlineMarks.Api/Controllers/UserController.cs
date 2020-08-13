@@ -17,8 +17,10 @@ namespace OnlineMarks.Api.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            //var users = _userService.GetAll();
-            return Ok("Pogodili ste GetAll");
+            var users = _userService.GetAll();
+            return Ok(users);
         }
+
+        //[HttpGet("id")]
     }
 }
