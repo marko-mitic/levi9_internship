@@ -21,6 +21,11 @@ namespace OnlineMarks.Data.Repositories
             _applicationContext.Users.Add(user);
         }
 
+        public User Authenticate(string username, string password)
+        {
+            return _applicationContext.Users.FirstOrDefault(x => x.UserName == username && x.Password == password);
+        }
+
         public User Get(Guid userId)
         {
             return _applicationContext.Users.FirstOrDefault(x => x.Id == userId);

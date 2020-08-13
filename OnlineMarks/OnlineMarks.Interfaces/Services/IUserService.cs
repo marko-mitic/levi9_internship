@@ -1,4 +1,5 @@
 ﻿using OnlineMarks.Data.Models;
+using OnlineMarks.Data.ViewModels.Auth;
 using OnlineMarks.Data.ViewModels.Users;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ namespace OnlineMarks.Interfaces.Services
 {
     public interface IUserService
     {
-        User Authenticate(string username, string password);
+        UserView Authenticate(AutheticateModel model);
         IEnumerable<UserView> GetAll();
         UserView GetById(Guid id);
     }

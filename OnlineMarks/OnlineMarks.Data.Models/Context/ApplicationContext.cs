@@ -7,13 +7,13 @@ using System.Text;
 
 namespace OnlineMarks.Data.Models.Context
 {
-    public class ApplicationContext : IdentityDbContext<User, UserRole, Guid>
+    public class ApplicationContext : DbContext
     {
         private IDbContextTransaction dbContextTransaction;
 
         public ApplicationContext(DbContextOptions options) : base(options)
         {
-
+            
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -21,12 +21,13 @@ namespace OnlineMarks.Data.Models.Context
             base.OnModelCreating(builder);
         }
 
-        public new DbSet<User> Users { get; set; } //Db sets should be made from models that extend user
+        public DbSet<User> Users { get; set; } //Db sets should be made from models that extend user
 
         public new void SaveChanges()
         {
             base.SaveChanges();
         }
+
         public new DbSet<T> Set<T>() where T : class
         {
             return base.Set<T>();

@@ -5,5 +5,6 @@ namespace OnlineMarks.Data.ViewModels.Users
     public class UserView
     {
         public string Name { get; set; }
+        public string Token { get; set; }
     }
 }

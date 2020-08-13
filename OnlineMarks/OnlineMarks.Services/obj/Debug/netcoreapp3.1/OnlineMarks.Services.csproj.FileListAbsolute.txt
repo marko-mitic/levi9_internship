@@ -14,3 +14,6 @@ C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Services\
 C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Services\bin\Debug\netcoreapp3.1\OnlineMarks.Interfaces.pdb
 C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Services\obj\Debug\netcoreapp3.1\OnlineMarks.Services.csprojAssemblyReference.cache
 C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Services\obj\Debug\netcoreapp3.1\OnlineMarks.Services.csproj.CopyComplete
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Services\bin\Debug\netcoreapp3.1\OnlineMarks.Data.ViewModels.dll
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Services\bin\Debug\netcoreapp3.1\OnlineMarks.Data.ViewModels.pdb
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Services\bin\Debug\netcoreapp3.1\OnlineMarks.Tools.dll

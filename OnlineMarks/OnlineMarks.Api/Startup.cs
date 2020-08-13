@@ -1,16 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using OnlineMarks.Data.Models.Context;
 using OnlineMarks.Data.Repositories;
 using OnlineMarks.Interfaces.Maps;
@@ -18,6 +13,7 @@ using OnlineMarks.Interfaces.Repository;
 using OnlineMarks.Interfaces.Services;
 using OnlineMarks.Maps.UserMap;
 using OnlineMarks.Services;
+using OnlineMarks.Tools.ConfigurationObjects;
 
 namespace OnlineMarks.Api
 {
@@ -41,6 +37,30 @@ namespace OnlineMarks.Api
             //services.AddCors();
             services.AddControllers();
 
+            var appSettingsSection = _configuration.GetSection("AppSettings");
+            services.Configure<AppSettings>(appSettingsSection);
+
+            // configure jwt authentication
+            var appSettings = appSettingsSection.Get<AppSettings>();
+            var key = Encoding.ASCII.GetBytes(appSettings.Secret);
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
+
             //services.AddMvc(option => option.EnableEndpointRouting = false);
             //services.AddControllers(options => options.EnableEndpointRouting = false);
             services.AddScoped<IUserService, UserService>();
@@ -56,6 +76,8 @@ namespace OnlineMarks.Api
 
          
             app.UseRouting();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
