@@ -63,16 +63,14 @@ namespace OnlineMarks.Services
 
         public IEnumerable<UserView> GetAll() // ExtensionMethods where added here
         {
-            //var userList = _userRepository.GetAll();
-            throw new NotImplementedException();
-            //return _userViewUserMap.Translate(userList);
+            var userList = _userRepository.GetAll();
+            return _userViewUserMap.Translate(userList);
         }
 
         public UserView GetById(Guid id) // ExtensionMethods where added here
         {
-            //var user = _userRepository.Get(id);
-            throw new NotImplementedException();
-            //return _userViewUserMap.Translate(user);
+            var user = _userRepository.Get(id);
+            return _userViewUserMap.Translate(user);
         }
     }
 }

@@ -6968,19 +6968,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\m.mitic\\.nuget\\packages\\": {}
+    "C:\\Users\\Ja\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj",
+      "projectUniqueName": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj",
       "projectName": "OnlineMarks.Services",
-      "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj",
-      "packagesPath": "C:\\Users\\m.mitic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\obj\\",
+      "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj",
+      "packagesPath": "C:\\Users\\Ja\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\m.mitic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6993,11 +6993,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
-              "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj"
+            "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
+              "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj"
             },
-            "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj": {
-              "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj"
+            "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj": {
+              "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj"
             }
           }
         }
@@ -7026,12 +7026,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.2, 3.1.2]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

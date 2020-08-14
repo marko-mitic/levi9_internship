@@ -21,7 +21,7 @@ namespace OnlineMarks.Data.Models.Context
             base.OnModelCreating(builder);
         }
 
-        public DbSet<User> Users { get; set; } //Db sets should be made from models that extend user
+        public DbSet<User> AppUsers { get; set; } //Db sets should be made from models that extend user
 
         public new void SaveChanges()
         {

@@ -19,7 +19,7 @@ namespace OnlineMarks.Api.Controllers
             _userService = userService;
         }
 
-        [Authorize(Roles = UserRole.Admin)]
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult GetAll()
         {

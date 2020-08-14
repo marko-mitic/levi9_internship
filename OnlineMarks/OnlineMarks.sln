@@ -17,9 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMarks.Maps", "OnlineM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMarks.Services", "OnlineMarks.Services\OnlineMarks.Services.csproj", "{4516D93C-270F-44E5-986B-1B50C19666ED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMarks.UnitTests", "OnlineMarks.UnitTests\OnlineMarks.UnitTests.csproj", "{74E9320C-5F69-41C7-8789-66DE07932AC8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMarks.Tools", "OnlineMarks.Tools\OnlineMarks.Tools.csproj", "{A885FBC2-BEAF-4685-92F4-E1F9AF11520E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMarks.Tools", "OnlineMarks.Tools\OnlineMarks.Tools.csproj", "{A885FBC2-BEAF-4685-92F4-E1F9AF11520E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,10 +53,6 @@ Global
 		{4516D93C-270F-44E5-986B-1B50C19666ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4516D93C-270F-44E5-986B-1B50C19666ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4516D93C-270F-44E5-986B-1B50C19666ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{74E9320C-5F69-41C7-8789-66DE07932AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74E9320C-5F69-41C7-8789-66DE07932AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74E9320C-5F69-41C7-8789-66DE07932AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74E9320C-5F69-41C7-8789-66DE07932AC8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A885FBC2-BEAF-4685-92F4-E1F9AF11520E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A885FBC2-BEAF-4685-92F4-E1F9AF11520E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A885FBC2-BEAF-4685-92F4-E1F9AF11520E}.Release|Any CPU.ActiveCfg = Release|Any CPU

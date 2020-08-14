@@ -18,22 +18,22 @@ namespace OnlineMarks.Data.Repositories
 
         public void Add(User user)
         {
-            _applicationContext.Users.Add(user);
+            _applicationContext.AppUsers.Add(user);
         }
 
         public User Authenticate(string username, string password)
         {
-            return _applicationContext.Users.FirstOrDefault(x => x.UserName == username && x.Password == password);
+            return _applicationContext.AppUsers.FirstOrDefault(x => x.Name == username && x.Password == password);
         }
 
         public User Get(Guid userId)
         {
-            return _applicationContext.Users.FirstOrDefault(x => x.Id == userId);
+            return _applicationContext.AppUsers.FirstOrDefault(x => x.Id == userId);
         }
 
         public List<User> GetAll()
         {
-            return _applicationContext.Users.ToList();
+            return _applicationContext.AppUsers.ToList();
         }
     }
 }
