@@ -14,7 +14,7 @@ namespace OnlineMarks.Data.Models.Migrations
                     Id = table.Column<byte[]>(nullable: false),
                     Name = table.Column<string>(nullable: true),
                     Password = table.Column<string>(nullable: true),
-                    Role = table.Column<string>(nullable: true)
+                    Role = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

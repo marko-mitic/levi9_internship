@@ -9,7 +9,7 @@ using OnlineMarks.Data.Models.Context;
 namespace OnlineMarks.Data.Models.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20200814131414_initialMigration")]
+    [Migration("20200814134550_initialMigration")]
     partial class initialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,8 +31,8 @@ namespace OnlineMarks.Data.Models.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("text");
 
-                    b.Property<string>("Role")
-                        .HasColumnType("text");
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
