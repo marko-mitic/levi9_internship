@@ -2,6 +2,7 @@ using System.IO;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
+using MySQL.Data.EntityFrameworkCore;
 
 namespace OnlineMarks.Data.Models.Context
 {
@@ -17,7 +18,7 @@ namespace OnlineMarks.Data.Models.Context
             IConfigurationRoot configuration = confBuilder.Build();
 
             var builder = new DbContextOptionsBuilder<ApplicationContext>();
-            builder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
+            builder.UseMySQL(configuration.GetConnectionString("DefaultConnection"));
 
             return new ApplicationContext(builder.Options);
         }

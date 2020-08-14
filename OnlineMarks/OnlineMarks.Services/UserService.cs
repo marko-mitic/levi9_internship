@@ -13,6 +13,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
+using Microsoft.Extensions.Configuration;
 
 namespace OnlineMarks.Services
 {
@@ -20,13 +21,14 @@ namespace OnlineMarks.Services
     {
         private readonly IUserRepository _userRepository;
         private readonly IUserViewUserMap _userViewUserMap;
-        private readonly AppSettings _appSettings;
 
-        public UserService(IUserRepository userRepository, IUserViewUserMap userViewUserMap, AppSettings appSettings)
+        private readonly IConfiguration _configuration;
+
+        public UserService(IUserRepository userRepository, IUserViewUserMap userViewUserMap, IConfiguration configuration)
         {
             _userRepository = userRepository;
             _userViewUserMap = userViewUserMap;
-            _appSettings = appSettings;
+            _configuration = configuration;
         }
 
         public UserView Authenticate(AutheticateModel model) // JWT
@@ -39,7 +41,7 @@ namespace OnlineMarks.Services
 
             // authentication successful so generate jwt token
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
+            var key = Encoding.ASCII.GetBytes(_configuration["SecretKey"]);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
