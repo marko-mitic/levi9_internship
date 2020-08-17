@@ -35,6 +35,21 @@ namespace OnlineMarks.Api.Controllers
             return Ok(users);
         }
 
-        //[HttpGet("id")]
+        /*[AllowAnonymous]
+        [HttpGet("id")]
+        public IActionResult Get([FromBody] AutheticateModel model)
+        {
+            var user = _userService.GetById();
+            return Ok(user);
+        }*/
+
+        [AllowAnonymous]
+        [HttpPost]
+
+        public IActionResult Add([FromBody] AutheticateModel model)
+        {
+            _userService.Add(model.Username, model.Password);
+            return Ok("You have successfully added " + model.Username);
+        }
     }
 }

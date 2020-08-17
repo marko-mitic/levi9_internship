@@ -12,5 +12,6 @@ namespace OnlineMarks.Interfaces.Services
         UserView Authenticate(AutheticateModel model);
         IEnumerable<UserView> GetAll();
         UserView GetById(Guid id);
+        void Add(string username, string password);
     }
 }

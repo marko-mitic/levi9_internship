@@ -19,6 +19,7 @@ namespace OnlineMarks.Data.Repositories
         public void Add(User user)
         {
             _applicationContext.AppUsers.Add(user);
+            _applicationContext.SaveChanges();
         }
 
         public User Authenticate(string username, string password)

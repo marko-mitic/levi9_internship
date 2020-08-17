@@ -30,6 +30,11 @@ namespace OnlineMarks.Services
             _userViewUserMap = userViewUserMap;
             _configuration = configuration;
         }
+        public void Add(string username, string password)
+        {
+            var user = new User() { Name = username, Password = password, Role = Tools.Enums.UserRole.User, Id = Guid.NewGuid() };
+            _userRepository.Add(user);
+        }
 
         public UserView Authenticate(AutheticateModel model) // JWT
         {
