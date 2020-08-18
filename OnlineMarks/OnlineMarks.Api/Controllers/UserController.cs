@@ -4,6 +4,9 @@ using OnlineMarks.Data.ViewModels.Auth;
 using OnlineMarks.Data.ViewModels.Users;
 using OnlineMarks.Interfaces.Services;
 using OnlineMarks.Tools.Enums;
+using System;
+using System.Collections.Generic;
+using System.Security.Claims;
 
 namespace OnlineMarks.Api.Controllers
 {
@@ -20,7 +23,7 @@ namespace OnlineMarks.Api.Controllers
         }
 
         [AllowAnonymous]
-        [HttpGet]
+        [HttpGet("getAll")]
         public IActionResult GetAll()
         {
             var users = _userService.GetAll();
@@ -43,6 +46,17 @@ namespace OnlineMarks.Api.Controllers
             return Ok("You have successfully added " + model.Username + "!");
         }
 
-
+        [AllowAnonymous]
+        [HttpGet("get")]
+        public IActionResult Get()
+        {
+            var identity = HttpContext.User.Identity as ClaimsIdentity;
+            if (identity.Name == null)
+            {
+                return NotFound("Identity not found!");
+            }
+            var user = _userService.GetById(Guid.Parse(identity.Name));
+            return Ok(user);
+        }
     }
 }
