@@ -22,9 +22,9 @@ namespace OnlineMarks.Data.Repositories
             _applicationContext.SaveChanges();
         }
 
-        public User Authenticate(string username, string password)
+        public User GetByUsername(string username)
         {
-            return _applicationContext.Users.FirstOrDefault(x => x.Name == username && x.Password == password);
+            return _applicationContext.Users.FirstOrDefault(x => x.Name == username);
         }
 
         public User Get(Guid userId)

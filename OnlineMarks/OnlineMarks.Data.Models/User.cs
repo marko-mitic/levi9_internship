@@ -10,7 +10,9 @@ namespace OnlineMarks.Data.Models
     {   
         public Guid Id { get; set; }
         public string Name { get; set; } // IdentityUser
-        public string Password { get; set; }
+        public byte[] PasswordHash { get; set; }
+
+        public byte[] PasswordSalt { get; set; }
         public string Role { get; set; }
     }
 }
