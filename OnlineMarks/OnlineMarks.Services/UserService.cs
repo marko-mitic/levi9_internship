@@ -31,7 +31,7 @@ namespace OnlineMarks.Services
             _configuration = configuration;
         }
 
-        public UserView Authenticate(AutheticateModel model) // JWT
+        public UserView Authenticate(AuthenticateModel model) // JWT
         {
             var user = _userRepository.Authenticate(model.Username, model.Password);
 
@@ -41,7 +41,7 @@ namespace OnlineMarks.Services
 
             // authentication successful so generate jwt token
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_configuration["SecretKey"]);
+            var key = Encoding.ASCII.GetBytes(_configuration["AppSettings:Secret"]);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
