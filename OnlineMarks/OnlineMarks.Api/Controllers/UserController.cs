@@ -39,8 +39,10 @@ namespace OnlineMarks.Api.Controllers
         [HttpPost]
         public IActionResult Add([FromBody] AuthenticateModel model)
         {
-            _userService.Add(model.Username, model.Password);
+            _userService.Add(model.Username, model.Password, model.Role);
             return Ok("You have successfully added " + model.Username + "!");
         }
+
+
     }
 }

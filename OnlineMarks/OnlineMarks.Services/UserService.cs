@@ -32,10 +32,28 @@ namespace OnlineMarks.Services
             _configuration = configuration;
         }
 
-        public void Add(string username, string password)
+        public void Add(string username, string password, string role)
         {
-            var user = new User() { Name = username, Password = password, Role = UserRole.Student, Id = Guid.NewGuid() };
-            _userRepository.Add(user);
+            if(UserRole.Admin == role)
+            {
+                var user = new Admin() { Name = username, Password = password, Id = Guid.NewGuid() };
+                _userRepository.Add(user);
+            }
+            else if(UserRole.Parent == role)
+            {
+                var user = new Parent() { Name = username, Password = password, Id = Guid.NewGuid() };
+                _userRepository.Add(user);
+            }
+            else if (UserRole.Professor == role)
+            {
+                var user = new Professor() { Name = username, Password = password, Id = Guid.NewGuid() };
+                _userRepository.Add(user);
+            }
+            else if (UserRole.Student == role)
+            {
+                var user = new Student() { Name = username, Password = password, Id = Guid.NewGuid() };
+                _userRepository.Add(user);
+            }
         }
 
         public UserView Authenticate(AuthenticateModel model) // JWT

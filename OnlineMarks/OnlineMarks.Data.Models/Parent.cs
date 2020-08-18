@@ -9,6 +9,9 @@ namespace OnlineMarks.Data.Models
     {
         public List<Student> Children { get; set; }
 
-        public new const string Role = UserRole.Parent;
+        public Parent()
+        {
+            Role = UserRole.Parent;
+        }
     }
 }

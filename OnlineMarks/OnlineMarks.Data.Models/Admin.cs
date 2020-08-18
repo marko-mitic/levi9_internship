@@ -5,12 +5,11 @@ using System.Text;
 
 namespace OnlineMarks.Data.Models
 {
-    public class Student : User
+    public class Admin : User
     {
-        public List<Subject> Subjects { get; set; }
-        public Student()
+        public Admin()
         {
-            Role = UserRole.Student;
+            Role = UserRole.Admin;
         }
     }
 }
