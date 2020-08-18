@@ -19,7 +19,7 @@ namespace OnlineMarks.Api.Controllers
             _userService = userService;
         }
 
-        [Authorize(Roles = UserRole.Admin)]
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -33,6 +33,14 @@ namespace OnlineMarks.Api.Controllers
         {
             var users = _userService.Authenticate(model);
             return Ok(users);
+        }
+
+        [Authorize(Roles = UserRole.Admin)]
+        [HttpPost]
+        public IActionResult Add([FromBody] AuthenticateModel model)
+        {
+            _userService.Add(model.Username, model.Password);
+            return Ok("You have successfully added " + model.Username + "!");
         }
     }
 }

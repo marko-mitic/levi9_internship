@@ -14,6 +14,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using Microsoft.Extensions.Configuration;
+using OnlineMarks.Tools.Enums;
 
 namespace OnlineMarks.Services
 {
@@ -29,6 +30,12 @@ namespace OnlineMarks.Services
             _userRepository = userRepository;
             _userViewUserMap = userViewUserMap;
             _configuration = configuration;
+        }
+
+        public void Add(string username, string password)
+        {
+            var user = new User() { Name = username, Password = password, Role = UserRole.Student, Id = Guid.NewGuid() };
+            _userRepository.Add(user);
         }
 
         public UserView Authenticate(AuthenticateModel model) // JWT
