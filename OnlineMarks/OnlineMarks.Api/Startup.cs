@@ -16,6 +16,7 @@ using OnlineMarks.Services;
 using OnlineMarks.Tools.ConfigurationObjects;
 using OnlineMarks.Tools.Auth;
 using MySQL.Data.EntityFrameworkCore;
+using OnlineMarks.Maps.SubjectMap;
 
 namespace OnlineMarks.Api
 {
@@ -68,6 +69,10 @@ namespace OnlineMarks.Api
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserViewUserMap, UserViewUserMap>();
+
+            services.AddScoped<ISubjectRepository, SubjectRepository>();
+            services.AddScoped<ISubjectViewSubjectMap, SubjectViewSubjectMap>();
+            services.AddScoped<ISubjectService, SubjectService>();
 
         }
 

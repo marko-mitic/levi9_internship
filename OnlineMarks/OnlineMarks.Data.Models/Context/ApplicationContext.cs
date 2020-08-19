@@ -42,6 +42,9 @@ namespace OnlineMarks.Data.Models.Context
                 .HasOne(pt => pt.Student)
                 .WithMany(t => t.StudentSubjects)
                 .HasForeignKey(pt => pt.StudentId);
+
+            builder.Entity<User>()
+                .HasAlternateKey(a => a.Name);
         }
 
         public DbSet<User> Users { get; set; } // Db sets should be made from models that extend user

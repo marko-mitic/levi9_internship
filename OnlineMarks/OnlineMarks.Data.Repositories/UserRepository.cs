@@ -24,7 +24,7 @@ namespace OnlineMarks.Data.Repositories
 
         public User GetByUsername(string username)
         {
-            return _applicationContext.Users.FirstOrDefault(x => x.Name == username);
+            return _applicationContext.Users.FirstOrDefault(x => x.Name == username); // needs work
         }
 
         public User Get(Guid userId)

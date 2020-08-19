@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace OnlineMarks.Data.Models.Migrations
 {
-    public partial class updated_models : Migration
+    public partial class updated_models_not_null : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,22 +12,23 @@ namespace OnlineMarks.Data.Models.Migrations
                 columns: table => new
                 {
                     Id = table.Column<byte[]>(nullable: false),
-                    Name = table.Column<string>(nullable: true),
-                    PasswordHash = table.Column<byte[]>(nullable: true),
-                    PasswordSalt = table.Column<byte[]>(nullable: true),
-                    Role = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(nullable: false),
+                    PasswordHash = table.Column<byte[]>(nullable: false),
+                    PasswordSalt = table.Column<byte[]>(nullable: false),
+                    Role = table.Column<string>(nullable: false),
                     Discriminator = table.Column<string>(nullable: false),
                     ParentId = table.Column<byte[]>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Users", x => x.Id);
+                    table.UniqueConstraint("AK_Users_Name", x => x.Name);
                     table.ForeignKey(
                         name: "FK_Users_Users_ParentId",
                         column: x => x.ParentId,
                         principalTable: "Users",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -35,8 +36,8 @@ namespace OnlineMarks.Data.Models.Migrations
                 columns: table => new
                 {
                     Id = table.Column<byte[]>(nullable: false),
-                    Name = table.Column<string>(nullable: true),
-                    ProfessorId = table.Column<byte[]>(nullable: true)
+                    Name = table.Column<string>(nullable: false),
+                    ProfessorId = table.Column<byte[]>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -46,7 +47,7 @@ namespace OnlineMarks.Data.Models.Migrations
                         column: x => x.ProfessorId,
                         principalTable: "Users",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -78,8 +79,8 @@ namespace OnlineMarks.Data.Models.Migrations
                 columns: table => new
                 {
                     Id = table.Column<byte[]>(nullable: false),
-                    StudentId = table.Column<byte[]>(nullable: true),
-                    SubjectId = table.Column<byte[]>(nullable: true)
+                    StudentId = table.Column<byte[]>(nullable: false),
+                    SubjectId = table.Column<byte[]>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -89,13 +90,13 @@ namespace OnlineMarks.Data.Models.Migrations
                         column: x => x.StudentId,
                         principalTable: "Users",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_SubjectGrades_Subjects_SubjectId",
                         column: x => x.SubjectId,
                         principalTable: "Subjects",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(

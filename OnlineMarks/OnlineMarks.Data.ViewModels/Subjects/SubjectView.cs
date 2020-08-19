@@ -1,17 +1,13 @@
-﻿using System;
+﻿using OnlineMarks.Data.Models;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace OnlineMarks.Data.Models
+namespace OnlineMarks.Data.ViewModels.Subjects
 {
-    public class Subject
+    public class SubjectView
     {
-        [Required]
-        public Guid Id { get; set; }
-        [Required]
         public string Name { get; set; }
-        [Required]
         public Professor Professor { get; set; }
         public List<StudentSubject> StudentSubjects { get; set; }
     }

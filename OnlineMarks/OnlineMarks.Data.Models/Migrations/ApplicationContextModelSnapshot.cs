@@ -58,9 +58,11 @@ namespace OnlineMarks.Data.Models.Migrations
                         .HasColumnType("varbinary(16)");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<byte[]>("ProfessorId")
+                        .IsRequired()
                         .HasColumnType("varbinary(16)");
 
                     b.HasKey("Id");
@@ -77,9 +79,11 @@ namespace OnlineMarks.Data.Models.Migrations
                         .HasColumnType("varbinary(16)");
 
                     b.Property<byte[]>("StudentId")
+                        .IsRequired()
                         .HasColumnType("varbinary(16)");
 
                     b.Property<byte[]>("SubjectId")
+                        .IsRequired()
                         .HasColumnType("varbinary(16)");
 
                     b.HasKey("Id");
@@ -102,18 +106,24 @@ namespace OnlineMarks.Data.Models.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Name")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasColumnType("varchar(767)");
 
                     b.Property<byte[]>("PasswordHash")
+                        .IsRequired()
                         .HasColumnType("varbinary(4000)");
 
                     b.Property<byte[]>("PasswordSalt")
+                        .IsRequired()
                         .HasColumnType("varbinary(4000)");
 
                     b.Property<string>("Role")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
+
+                    b.HasAlternateKey("Name");
 
                     b.ToTable("Users");
 
@@ -146,6 +156,7 @@ namespace OnlineMarks.Data.Models.Migrations
                     b.HasBaseType("OnlineMarks.Data.Models.User");
 
                     b.Property<byte[]>("ParentId")
+                        .IsRequired()
                         .HasColumnType("varbinary(16)");
 
                     b.HasIndex("ParentId");
@@ -179,25 +190,33 @@ namespace OnlineMarks.Data.Models.Migrations
                 {
                     b.HasOne("OnlineMarks.Data.Models.Professor", "Professor")
                         .WithMany("Subjects")
-                        .HasForeignKey("ProfessorId");
+                        .HasForeignKey("ProfessorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("OnlineMarks.Data.Models.SubjectGrade", b =>
                 {
                     b.HasOne("OnlineMarks.Data.Models.Student", "Student")
                         .WithMany()
-                        .HasForeignKey("StudentId");
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("OnlineMarks.Data.Models.Subject", "Subject")
                         .WithMany()
-                        .HasForeignKey("SubjectId");
+                        .HasForeignKey("SubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("OnlineMarks.Data.Models.Student", b =>
                 {
                     b.HasOne("OnlineMarks.Data.Models.Parent", "Parent")
                         .WithMany("Children")
-                        .HasForeignKey("ParentId");
+                        .HasForeignKey("ParentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

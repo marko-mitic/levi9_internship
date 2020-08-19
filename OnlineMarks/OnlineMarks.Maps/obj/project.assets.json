@@ -2046,6 +2046,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "OnlineMarks.Data.Models": "1.0.0",
           "OnlineMarks.Tools": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "6.7.1"
         },
