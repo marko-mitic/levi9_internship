@@ -28,13 +28,11 @@ namespace OnlineMarks.Api.Controllers
         }
 
         [AllowAnonymous]
-        [HttpGet("authenticate")]
-        public IActionResult Authenticate([FromBody]AutheticateModel model)
+        [HttpPost("authenticate")]
+        public IActionResult Authenticate([FromBody]AuthenticateModel model)
         {
             var users = _userService.Authenticate(model);
             return Ok(users);
         }
-
-        //[HttpGet("id")]
     }
 }

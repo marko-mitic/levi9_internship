@@ -13,6 +13,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
+using Microsoft.Extensions.Configuration;
 
 namespace OnlineMarks.Services
 {
@@ -20,16 +21,17 @@ namespace OnlineMarks.Services
     {
         private readonly IUserRepository _userRepository;
         private readonly IUserViewUserMap _userViewUserMap;
-        private readonly AppSettings _appSettings;
 
-        public UserService(IUserRepository userRepository, IUserViewUserMap userViewUserMap, AppSettings appSettings)
+        private readonly IConfiguration _configuration;
+
+        public UserService(IUserRepository userRepository, IUserViewUserMap userViewUserMap, IConfiguration configuration)
         {
             _userRepository = userRepository;
             _userViewUserMap = userViewUserMap;
-            _appSettings = appSettings;
+            _configuration = configuration;
         }
 
-        public UserView Authenticate(AutheticateModel model) // JWT
+        public UserView Authenticate(AuthenticateModel model) // JWT
         {
             var user = _userRepository.Authenticate(model.Username, model.Password);
 
@@ -39,7 +41,7 @@ namespace OnlineMarks.Services
 
             // authentication successful so generate jwt token
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_appSettings.Secret);
+            var key = Encoding.ASCII.GetBytes(_configuration["AppSettings:Secret"]);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
@@ -61,16 +63,14 @@ namespace OnlineMarks.Services
 
         public IEnumerable<UserView> GetAll() // ExtensionMethods where added here
         {
-            //var userList = _userRepository.GetAll();
-            throw new NotImplementedException();
-            //return _userViewUserMap.Translate(userList);
+            var userList = _userRepository.GetAll();
+            return _userViewUserMap.Translate(userList);
         }
 
         public UserView GetById(Guid id) // ExtensionMethods where added here
         {
-            //var user = _userRepository.Get(id);
-            throw new NotImplementedException();
-            //return _userViewUserMap.Translate(user);
+            var user = _userRepository.Get(id);
+            return _userViewUserMap.Translate(user);
         }
     }
 }

@@ -4,9 +4,10 @@ using System.Text;
 
 namespace OnlineMarks.Tools.Enums
 {
-    public class UserRole
+    public static class UserRole
     {
         public const string Admin = "Admin";
-        public const string User = "User";
+        public const string Professor = "Professor";
+        public const string Student = "Student";
     }
 }
