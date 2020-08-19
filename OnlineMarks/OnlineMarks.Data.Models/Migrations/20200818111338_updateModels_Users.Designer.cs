@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OnlineMarks.Data.Models.Context;
 
 namespace OnlineMarks.Data.Models.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    partial class ApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20200818111338_updateModels_Users")]
+    partial class updateModels_Users
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -94,11 +96,8 @@ namespace OnlineMarks.Data.Models.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("text");
 
-                    b.Property<byte[]>("PasswordHash")
-                        .HasColumnType("varbinary(4000)");
-
-                    b.Property<byte[]>("PasswordSalt")
-                        .HasColumnType("varbinary(4000)");
+                    b.Property<string>("Password")
+                        .HasColumnType("text");
 
                     b.Property<string>("Role")
                         .HasColumnType("text");
@@ -108,13 +107,6 @@ namespace OnlineMarks.Data.Models.Migrations
                     b.ToTable("Users");
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("User");
-                });
-
-            modelBuilder.Entity("OnlineMarks.Data.Models.Admin", b =>
-                {
-                    b.HasBaseType("OnlineMarks.Data.Models.User");
-
-                    b.HasDiscriminator().HasValue("Admin");
                 });
 
             modelBuilder.Entity("OnlineMarks.Data.Models.Parent", b =>

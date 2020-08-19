@@ -14,6 +14,7 @@ using OnlineMarks.Interfaces.Services;
 using OnlineMarks.Maps.UserMap;
 using OnlineMarks.Services;
 using OnlineMarks.Tools.ConfigurationObjects;
+using OnlineMarks.Tools.Auth;
 using MySQL.Data.EntityFrameworkCore;
 
 namespace OnlineMarks.Api
@@ -61,6 +62,8 @@ namespace OnlineMarks.Api
                     ValidateAudience = false
                 };
             });
+
+            services.AddScoped<IAuthManager, AuthManager>();
 
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();

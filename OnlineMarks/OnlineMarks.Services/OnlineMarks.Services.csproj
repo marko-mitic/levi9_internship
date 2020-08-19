@@ -5,11 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.7.1" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\OnlineMarks.Data.Models\OnlineMarks.Data.Models.csproj" />
+    <ProjectReference Include="..\OnlineMarks.Data.Models\OnlineMarks.Tools.csproj" />
     <ProjectReference Include="..\OnlineMarks.Data.Repositories\OnlineMarks.Data.Repositories.csproj" />
   </ItemGroup>
 

@@ -1,19 +1,16 @@
-﻿using Microsoft.IdentityModel.Tokens;
-using OnlineMarks.Data.Models;
-using OnlineMarks.Data.Repositories;
+﻿using OnlineMarks.Data.Models;
 using OnlineMarks.Data.ViewModels.Auth;
 using OnlineMarks.Data.ViewModels.Users;
 using OnlineMarks.Interfaces.Maps;
 using OnlineMarks.Interfaces.Repository;
 using OnlineMarks.Interfaces.Services;
-using OnlineMarks.Tools.ConfigurationObjects;
 using System;
 using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
-using System.Security.Claims;
 using System.Text;
-using Microsoft.Extensions.Configuration;
+using OnlineMarks.Tools.Enums;
+using OnlineMarks.Tools.Auth;
+
 
 namespace OnlineMarks.Services
 {
@@ -22,41 +19,55 @@ namespace OnlineMarks.Services
         private readonly IUserRepository _userRepository;
         private readonly IUserViewUserMap _userViewUserMap;
 
-        private readonly IConfiguration _configuration;
+        private readonly IAuthManager _authManager;
 
-        public UserService(IUserRepository userRepository, IUserViewUserMap userViewUserMap, IConfiguration configuration)
+        public UserService(IUserRepository userRepository, IUserViewUserMap userViewUserMap, IAuthManager authManager)
         {
             _userRepository = userRepository;
             _userViewUserMap = userViewUserMap;
-            _configuration = configuration;
+            _authManager = authManager;
+        }
+
+        public void Add(string username, string password, string role)
+        {   
+            (byte[] passwordHash, byte[] passwordSalt) = _authManager.CreatePasswordHashAndSalt(password);
+
+            if(UserRole.Admin == role)
+            {
+                var user = new Admin() { Name = username, PasswordHash = passwordHash, PasswordSalt = passwordSalt, Id = Guid.NewGuid() };
+                _userRepository.Add(user);
+            }
+            else if(UserRole.Parent == role)
+            {
+                var user = new Parent() { Name = username, PasswordHash = passwordHash, PasswordSalt = passwordSalt, Id = Guid.NewGuid() };
+                _userRepository.Add(user);
+            }
+            else if (UserRole.Professor == role)
+            {
+                var user = new Professor() { Name = username, PasswordHash = passwordHash, PasswordSalt = passwordSalt, Id = Guid.NewGuid() };
+                _userRepository.Add(user);
+            }
+            else if (UserRole.Student == role)
+            {
+                var user = new Student() { Name = username, PasswordHash = passwordHash, PasswordSalt = passwordSalt, Id = Guid.NewGuid() };
+                _userRepository.Add(user);
+            }
         }
 
         public UserView Authenticate(AuthenticateModel model) // JWT
-        {
-            var user = _userRepository.Authenticate(model.Username, model.Password);
+        {   
+            var user = _userRepository.GetByUsername(model.Username);
 
             // return null if user not found
             if (user == null)
-                return null;
+                return null;            
 
-            // authentication successful so generate jwt token
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_configuration["AppSettings:Secret"]);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                  new Claim(ClaimTypes.Name, user.Id.ToString()),
-                  new Claim(ClaimTypes.Role, user.Role.ToString())
-                }),
-                Expires = DateTime.UtcNow.AddDays(30),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
-            var token = tokenHandler.CreateToken(tokenDescriptor);
+            if(!_authManager.VerifyPaswordHash(model.Password, user.PasswordSalt, user.PasswordHash))
+                return null;
 
             var userModel = _userViewUserMap.Translate(user);
 
-            userModel.Token = tokenHandler.WriteToken(token);
+            userModel.Token = _authManager.GenerateToken(user.Id.ToString(), user.Role);
 
             return userModel;
         }
