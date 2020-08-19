@@ -8,5 +8,6 @@ namespace OnlineMarks.Data.Models
     {
         public Guid Id { get; set; }
         public int Value { get; set; }
+        public SubjectGrade SubjectGrade { get; set; }
     }
 }

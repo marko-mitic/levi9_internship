@@ -9,8 +9,8 @@ using OnlineMarks.Data.Models.Context;
 namespace OnlineMarks.Data.Models.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20200818143111_User-Password-Hash-and-Salt")]
-    partial class UserPasswordHashandSalt
+    [Migration("20200819103850_updated_models")]
+    partial class updated_models
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -38,6 +38,21 @@ namespace OnlineMarks.Data.Models.Migrations
                     b.ToTable("Grade");
                 });
 
+            modelBuilder.Entity("OnlineMarks.Data.Models.StudentSubject", b =>
+                {
+                    b.Property<byte[]>("StudentId")
+                        .HasColumnType("varbinary(16)");
+
+                    b.Property<byte[]>("SubjectId")
+                        .HasColumnType("varbinary(16)");
+
+                    b.HasKey("StudentId", "SubjectId");
+
+                    b.HasIndex("SubjectId");
+
+                    b.ToTable("StudentSubject");
+                });
+
             modelBuilder.Entity("OnlineMarks.Data.Models.Subject", b =>
                 {
                     b.Property<byte[]>("Id")
@@ -48,18 +63,11 @@ namespace OnlineMarks.Data.Models.Migrations
                         .HasColumnType("text");
 
                     b.Property<byte[]>("ProfessorId")
-                        .IsRequired()
-                        .HasColumnType("varbinary(16)");
-
-                    b.Property<byte[]>("StudentId")
                         .HasColumnType("varbinary(16)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProfessorId")
-                        .IsUnique();
-
-                    b.HasIndex("StudentId");
+                    b.HasIndex("ProfessorId");
 
                     b.ToTable("Subjects");
                 });
@@ -71,14 +79,16 @@ namespace OnlineMarks.Data.Models.Migrations
                         .HasColumnType("varbinary(16)");
 
                     b.Property<byte[]>("StudentId")
-                        .IsRequired()
                         .HasColumnType("varbinary(16)");
 
                     b.Property<byte[]>("SubjectId")
-                        .IsRequired()
                         .HasColumnType("varbinary(16)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("StudentId");
+
+                    b.HasIndex("SubjectId");
 
                     b.ToTable("SubjectGrades");
                 });
@@ -147,27 +157,47 @@ namespace OnlineMarks.Data.Models.Migrations
 
             modelBuilder.Entity("OnlineMarks.Data.Models.Grade", b =>
                 {
-                    b.HasOne("OnlineMarks.Data.Models.SubjectGrade", null)
+                    b.HasOne("OnlineMarks.Data.Models.SubjectGrade", "SubjectGrade")
                         .WithMany("Grades")
                         .HasForeignKey("SubjectGradeId");
                 });
 
-            modelBuilder.Entity("OnlineMarks.Data.Models.Subject", b =>
+            modelBuilder.Entity("OnlineMarks.Data.Models.StudentSubject", b =>
                 {
-                    b.HasOne("OnlineMarks.Data.Models.Professor", null)
-                        .WithOne("Subject")
-                        .HasForeignKey("OnlineMarks.Data.Models.Subject", "ProfessorId")
+                    b.HasOne("OnlineMarks.Data.Models.Student", "Student")
+                        .WithMany("StudentSubjects")
+                        .HasForeignKey("StudentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OnlineMarks.Data.Models.Student", null)
+                    b.HasOne("OnlineMarks.Data.Models.Subject", "Subject")
+                        .WithMany("StudentSubjects")
+                        .HasForeignKey("SubjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("OnlineMarks.Data.Models.Subject", b =>
+                {
+                    b.HasOne("OnlineMarks.Data.Models.Professor", "Professor")
                         .WithMany("Subjects")
+                        .HasForeignKey("ProfessorId");
+                });
+
+            modelBuilder.Entity("OnlineMarks.Data.Models.SubjectGrade", b =>
+                {
+                    b.HasOne("OnlineMarks.Data.Models.Student", "Student")
+                        .WithMany()
                         .HasForeignKey("StudentId");
+
+                    b.HasOne("OnlineMarks.Data.Models.Subject", "Subject")
+                        .WithMany()
+                        .HasForeignKey("SubjectId");
                 });
 
             modelBuilder.Entity("OnlineMarks.Data.Models.Student", b =>
                 {
-                    b.HasOne("OnlineMarks.Data.Models.Parent", null)
+                    b.HasOne("OnlineMarks.Data.Models.Parent", "Parent")
                         .WithMany("Children")
                         .HasForeignKey("ParentId");
                 });

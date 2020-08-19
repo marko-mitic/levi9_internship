@@ -6,8 +6,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OnlineMarks.Data.Models\OnlineMarks.Data.Models.csproj" />
-    <ProjectReference Include="..\OnlineMarks.Data.Models\OnlineMarks.Tools.csproj" />
     <ProjectReference Include="..\OnlineMarks.Data.Repositories\OnlineMarks.Data.Repositories.csproj" />
+    <ProjectReference Include="..\OnlineMarks.Tools\OnlineMarks.Tools.csproj" />
   </ItemGroup>
 
 </Project>
