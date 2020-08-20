@@ -14,19 +14,35 @@ namespace OnlineMarks.Services
         private readonly ISubjectRepository _subjectRepository;
         private readonly ISubjectViewSubjectMap _subjectViewUserMap;
         private readonly IProfessorRepository _professorRepository;
+        private readonly IStudentRepository _studentRepository;
 
-        public SubjectService(ISubjectRepository subjectRepository, ISubjectViewSubjectMap subjectViewUserMap, IProfessorRepository professorRepository)
+        public SubjectService(ISubjectRepository subjectRepository, ISubjectViewSubjectMap subjectViewUserMap,
+            IProfessorRepository professorRepository, IStudentRepository studentRepository)
         {
             _subjectRepository = subjectRepository;
             _subjectViewUserMap = subjectViewUserMap;
             _professorRepository = professorRepository;
+            _studentRepository = studentRepository;
         }
-        public void Add(string name, string professorName)
+        public void Add(string subjectName, string professorName)
         {
             var professor = _professorRepository.GetByName(professorName);
 
-            var subject = new Subject() { Name = name, Id = Guid.NewGuid(), Professor = professor };
+            var subject = new Subject() { Name = subjectName, Id = Guid.NewGuid(), Professor = professor };
             _subjectRepository.Add(subject);
+        }
+
+        public void AddStudent(string subjectName, string studentName)
+        {
+            var subject = _subjectRepository.GetByName(subjectName);
+            var student = _studentRepository.GetByName(studentName);
+
+            var studentSubject = new StudentSubject() { Student = student, StudentId = student.Id, Subject = subject, SubjectId = subject.Id };
+
+            subject.StudentSubjects.Add(studentSubject);
+            student.StudentSubjects.Add(studentSubject);
+
+            _subjectRepository.SaveChanges();
         }
 
         public IEnumerable<SubjectView> GetAll()
@@ -43,7 +59,7 @@ namespace OnlineMarks.Services
 
         public SubjectView GetByName(string name)
         {
-            var subject = _subjectRepository.GetByUsername(name);
+            var subject = _subjectRepository.GetByName(name);
             return _subjectViewUserMap.Translate(subject);
         }
     }

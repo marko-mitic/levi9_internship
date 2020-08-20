@@ -76,14 +76,12 @@ namespace OnlineMarks.Api
 
             services.AddScoped<IProfessorRepository, ProfessorRepository>();
 
+            services.AddScoped<IStudentRepository, StudentRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ApplicationContext applicationContext)
         {
-            //app.UseMvc();
-
-         
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();

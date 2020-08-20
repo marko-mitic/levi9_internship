@@ -39,6 +39,14 @@ namespace OnlineMarks.Api.Controllers
             return Ok("You have successfully added " + subjectView.Name + "!");
         }
 
+        [Authorize(Roles = UserRole.Admin)]
+        [HttpPost("add/student")]
+        public IActionResult AddStudent([FromBody] SubjectStudentView subjectStudentView)
+        {
+            _subjectService.AddStudent(subjectStudentView.SubjectName, subjectStudentView.StudentName);
+            return Ok("You have successfully added " + subjectStudentView.StudentName + " to " + subjectStudentView.SubjectName + "!");
+        }
+
         [AllowAnonymous]
         [HttpGet]
         public IActionResult Get([FromBody] SubjectView subjectView)

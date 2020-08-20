@@ -9,7 +9,8 @@ namespace OnlineMarks.Interfaces.Services
     {
         IEnumerable<SubjectView> GetAll();
         SubjectView GetById(Guid id);
-        void Add(string name, string professorName);
+        void Add(string subjectName, string professorName);
         SubjectView GetByName(string name);
+        void AddStudent(string subjectName, string studentName);
     }
 }

@@ -14,5 +14,9 @@ namespace OnlineMarks.Data.Models
         [Required]
         public Professor Professor { get; set; }
         public List<StudentSubject> StudentSubjects { get; set; }
+        public Subject()
+        {
+            StudentSubjects = new List<StudentSubject>();
+        }
     }
 }

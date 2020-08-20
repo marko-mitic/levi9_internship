@@ -9,11 +9,12 @@ namespace OnlineMarks.Data.Models
     public class Student : User
     {
         public List<StudentSubject> StudentSubjects { get; set; }
-        [Required]
         public Parent Parent { get; set; }
         public Student()
         {
             Role = UserRole.Student;
+
+            StudentSubjects = new List<StudentSubject>();
         }
     }
 }
