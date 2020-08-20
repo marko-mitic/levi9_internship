@@ -13,7 +13,7 @@ namespace OnlineMarks.Data.Models.Context
 
         public ApplicationContext(DbContextOptions options) : base(options)
         {
-
+            
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
