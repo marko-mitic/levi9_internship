@@ -1,4 +1,5 @@
-﻿using OnlineMarks.Data.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using OnlineMarks.Data.Models;
 using OnlineMarks.Data.Models.Context;
 using OnlineMarks.Interfaces.Repository;
 using System;
@@ -24,7 +25,7 @@ namespace OnlineMarks.Data.Repositories
 
         public Subject Get(Guid subjectId)
         {
-            return _applicationContext.Subjects.FirstOrDefault(x => x.Id == subjectId);
+            return _applicationContext.Subjects.Include(x => x.Professor).FirstOrDefault(x => x.Id == subjectId);
         }
 
         public List<Subject> GetAll()
@@ -33,7 +34,7 @@ namespace OnlineMarks.Data.Repositories
         }
         public Subject GetByName(string name)
         {
-            return _applicationContext.Subjects.FirstOrDefault(x => x.Name == name);
+            return _applicationContext.Subjects.Include(x => x.Professor).FirstOrDefault(x => x.Name == name);
         }
         public void SaveChanges()
         {

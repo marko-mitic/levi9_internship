@@ -1,4 +1,5 @@
-﻿using OnlineMarks.Data.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using OnlineMarks.Data.Models;
 using OnlineMarks.Data.Models.Context;
 using OnlineMarks.Interfaces.Repository;
 using System;
