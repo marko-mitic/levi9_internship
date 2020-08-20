@@ -74,6 +74,8 @@ namespace OnlineMarks.Api
             services.AddScoped<ISubjectViewSubjectMap, SubjectViewSubjectMap>();
             services.AddScoped<ISubjectService, SubjectService>();
 
+            services.AddScoped<IProfessorRepository, ProfessorRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

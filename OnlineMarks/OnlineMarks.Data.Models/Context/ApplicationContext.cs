@@ -45,6 +45,9 @@ namespace OnlineMarks.Data.Models.Context
 
             builder.Entity<User>()
                 .HasAlternateKey(a => a.Name);
+
+            builder.Entity<Subject>()
+                .HasAlternateKey(a => a.Name);
         }
 
         public DbSet<User> Users { get; set; } // Db sets should be made from models that extend user

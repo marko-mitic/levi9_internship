@@ -9,8 +9,8 @@ using OnlineMarks.Data.Models.Context;
 namespace OnlineMarks.Data.Models.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20200819133553_updated_models_not_null")]
-    partial class updated_models_not_null
+    [Migration("20200820084158_unique_subject_name")]
+    partial class unique_subject_name
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -61,13 +61,15 @@ namespace OnlineMarks.Data.Models.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(767)");
 
                     b.Property<byte[]>("ProfessorId")
                         .IsRequired()
                         .HasColumnType("varbinary(16)");
 
                     b.HasKey("Id");
+
+                    b.HasAlternateKey("Name");
 
                     b.HasIndex("ProfessorId");
 

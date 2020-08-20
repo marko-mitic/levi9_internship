@@ -13,28 +13,38 @@ namespace OnlineMarks.Services
     {
         private readonly ISubjectRepository _subjectRepository;
         private readonly ISubjectViewSubjectMap _subjectViewUserMap;
+        private readonly IProfessorRepository _professorRepository;
 
-        public SubjectService(ISubjectRepository subjectRepository, ISubjectViewSubjectMap subjectViewUserMap)
+        public SubjectService(ISubjectRepository subjectRepository, ISubjectViewSubjectMap subjectViewUserMap, IProfessorRepository professorRepository)
         {
             _subjectRepository = subjectRepository;
             _subjectViewUserMap = subjectViewUserMap;
+            _professorRepository = professorRepository;
         }
-        public void Add(string name)
+        public void Add(string name, string professorName)
         {
-            var subject = new Subject() { Name = name, Id = Guid.NewGuid() };
+            var professor = _professorRepository.GetByName(professorName);
+
+            var subject = new Subject() { Name = name, Id = Guid.NewGuid(), Professor = professor };
             _subjectRepository.Add(subject);
         }
 
         public IEnumerable<SubjectView> GetAll()
         {
-            var userList = _subjectRepository.GetAll();
-            return _subjectViewUserMap.Translate(userList);
+            var subjectList = _subjectRepository.GetAll();
+            return _subjectViewUserMap.Translate(subjectList);
         }
 
         public SubjectView GetById(Guid id)
         {
-            var user = _subjectRepository.Get(id);
-            return _subjectViewUserMap.Translate(user);
+            var subject = _subjectRepository.Get(id);
+            return _subjectViewUserMap.Translate(subject);
+        }
+
+        public SubjectView GetByName(string name)
+        {
+            var subject = _subjectRepository.GetByUsername(name);
+            return _subjectViewUserMap.Translate(subject);
         }
     }
 }

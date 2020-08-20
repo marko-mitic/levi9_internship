@@ -10,5 +10,6 @@ namespace OnlineMarks.Interfaces.Repository
         void Add(Subject subject);
         Subject Get(Guid subjectId);
         List<Subject> GetAll();
+        Subject GetByUsername(string name);
     }
 }

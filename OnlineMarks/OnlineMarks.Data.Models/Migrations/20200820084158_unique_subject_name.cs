@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace OnlineMarks.Data.Models.Migrations
 {
-    public partial class updated_models_not_null : Migration
+    public partial class unique_subject_name : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -42,6 +42,7 @@ namespace OnlineMarks.Data.Models.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Subjects", x => x.Id);
+                    table.UniqueConstraint("AK_Subjects_Name", x => x.Name);
                     table.ForeignKey(
                         name: "FK_Subjects_Users_ProfessorId",
                         column: x => x.ProfessorId,

@@ -38,7 +38,7 @@ namespace OnlineMarks.Api.Controllers
             return Ok(users);
         }
 
-        [Authorize(Roles = UserRole.Admin)]
+        [AllowAnonymous]
         [HttpPost("add")]
         public IActionResult Add([FromBody] AuthenticateModel model)
         {

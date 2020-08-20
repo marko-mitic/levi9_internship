@@ -31,5 +31,9 @@ namespace OnlineMarks.Data.Repositories
         {
             return _applicationContext.Subjects.ToList();
         }
+        public Subject GetByUsername(string name)
+        {
+            return _applicationContext.Subjects.FirstOrDefault(x => x.Name == name);
+        }
     }
 }

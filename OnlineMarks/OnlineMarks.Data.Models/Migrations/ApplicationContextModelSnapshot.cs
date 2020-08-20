@@ -59,13 +59,15 @@ namespace OnlineMarks.Data.Models.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("varchar(767)");
 
                     b.Property<byte[]>("ProfessorId")
                         .IsRequired()
                         .HasColumnType("varbinary(16)");
 
                     b.HasKey("Id");
+
+                    b.HasAlternateKey("Name");
 
                     b.HasIndex("ProfessorId");
 
