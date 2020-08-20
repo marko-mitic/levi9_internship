@@ -41,7 +41,7 @@ namespace OnlineMarks.Api.Controllers
 
         [Authorize(Roles = UserRole.Admin)]
         [HttpPost("add/student")]
-        public IActionResult AddStudent([FromBody] SubjectStudentView subjectStudentView)
+        public IActionResult AddStudent([FromBody] SubjectStudentInputView subjectStudentView)
         {
             _subjectService.AddStudent(subjectStudentView.SubjectName, subjectStudentView.StudentName);
             return Ok("You have successfully added " + subjectStudentView.StudentName + " to " + subjectStudentView.SubjectName + "!");

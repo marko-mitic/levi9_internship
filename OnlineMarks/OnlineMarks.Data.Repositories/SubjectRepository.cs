@@ -30,7 +30,7 @@ namespace OnlineMarks.Data.Repositories
 
         public List<Subject> GetAll()
         {
-            return _applicationContext.Subjects.ToList();
+            return _applicationContext.Subjects.Include(x => x.Professor).ToList();
         }
         public Subject GetByName(string name)
         {

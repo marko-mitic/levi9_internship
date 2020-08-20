@@ -9,6 +9,6 @@ namespace OnlineMarks.Data.ViewModels.Subjects
     {
         public string Name { get; set; }
         public string Professor { get; set; }
-        public List<StudentSubject> StudentSubjects { get; set; }
+        public List<SubjectStudentView> StudentSubjects { get; set; }
     }
 }
