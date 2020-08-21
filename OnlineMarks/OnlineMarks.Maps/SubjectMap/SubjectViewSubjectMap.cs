@@ -16,7 +16,7 @@ namespace OnlineMarks.Maps.SubjectMap
                 return null;
 
             var temp = new SubjectView() { Name = subject.Name, Professor = subject.Professor.Name };
-            temp.StudentSubjects = subject.StudentSubjects.Select(x => new SubjectStudentView() { StudentId = x.StudentId }).ToList();
+            temp.StudentSubjects = subject.StudentSubjects.Select(x => new SubjectStudentView() { StudentId = x.StudentId, StudentName = x.Student.Name }).ToList();
 
             return temp;
         }

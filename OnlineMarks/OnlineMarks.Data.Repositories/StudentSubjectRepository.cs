@@ -1,4 +1,5 @@
-﻿using OnlineMarks.Data.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using OnlineMarks.Data.Models;
 using OnlineMarks.Data.Models.Context;
 using OnlineMarks.Interfaces.Repository;
 using System;
@@ -17,7 +18,7 @@ namespace OnlineMarks.Data.Repositories
         }
         public List<StudentSubject> GetAll(Guid subjectId)
         {
-            return _applicationContext.StudentSubjects.Where(x => x.SubjectId == subjectId).ToList();
+            return _applicationContext.StudentSubjects.Include(x => x.Student).Where(x => x.SubjectId == subjectId).ToList();
         }
     }
 }
