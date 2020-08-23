@@ -64,6 +64,8 @@ namespace OnlineMarks.Api
                 };
             });
 
+            services.AddSignalR();
+
             services.AddScoped<IAuthManager, AuthManager>();
 
             services.AddScoped<IUserService, UserService>();
@@ -83,6 +85,14 @@ namespace OnlineMarks.Api
         {
             //app.UseMvc();
 
+             app.UseCors(builder =>
+            {
+                builder.AllowAnyOrigin();
+            });
+
+            app.UseStaticFiles();
+                    app.UseHttpsRedirection();
+
          
             app.UseRouting();
             app.UseAuthentication();
@@ -91,6 +101,7 @@ namespace OnlineMarks.Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<MessageHub>("/hub");
             });
 
             applicationContext.Database.EnsureCreated();
