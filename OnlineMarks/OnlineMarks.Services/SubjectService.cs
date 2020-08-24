@@ -29,7 +29,22 @@ namespace OnlineMarks.Services
         }
         public void Add(string subjectName, string professorName)
         {
+            if (string.IsNullOrWhiteSpace(subjectName))
+            {
+                throw new ArgumentNullException($"{nameof(subjectName)} is empty");
+            }
+
+            if (string.IsNullOrWhiteSpace(professorName))
+            {
+                throw new ArgumentNullException($"{nameof(professorName)} is empty");
+            }
+
             var professor = _professorRepository.GetByName(professorName);
+
+            if(professor == null)
+            {
+                throw new KeyNotFoundException($"Professor with name {professorName} not found");
+            }
 
             var subject = new Subject() { Name = subjectName, Id = Guid.NewGuid(), Professor = professor };
             _subjectRepository.Add(subject);

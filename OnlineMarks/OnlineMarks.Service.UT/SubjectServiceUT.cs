@@ -24,7 +24,7 @@ namespace OnlineMarks.Services.UT
         private Mock<ISubjectViewSubjectMap> _subjectViewUserMap;
         private Mock<IProfessorRepository> _professorRepository;
         private Mock<IStudentRepository> _studentRepository;
-
+        private Mock<IStudentSubjectRepository> _studentSubjectRepository;
 
         [TestInitialize]
         public void Init()
@@ -37,7 +37,7 @@ namespace OnlineMarks.Services.UT
         private void SetupService()
         {
 
-            _service = new SubjectService(_subjectRepositoryMock.Object, _subjectViewUserMap.Object, _professorRepository.Object, _studentRepository.Object);
+            _service = new SubjectService(_subjectRepositoryMock.Object, _subjectViewUserMap.Object, _professorRepository.Object, _studentRepository.Object, _studentSubjectRepository.Object);
         }
 
         private void SetupMock()
@@ -46,6 +46,16 @@ namespace OnlineMarks.Services.UT
             _subjectRepositoryMock.Setup(x => x.Add(It.IsAny<Subject>()));
 
             _subjectRepositoryMock.Setup(x => x.GetByName(It.IsAny<string>())).Returns(new Subject() { Name = "asd" });
+
+            _subjectViewUserMap = new Mock<ISubjectViewSubjectMap>();
+
+            _professorRepository = new Mock<IProfessorRepository>();
+            _professorRepository.Setup(x => x.GetByName(It.IsAny<string>())).Returns(new Professor());
+
+
+            _studentRepository = new Mock<IStudentRepository>();
+
+            _studentSubjectRepository = new Mock<IStudentSubjectRepository>();
         }
 
         private void SetupData()
@@ -64,12 +74,8 @@ namespace OnlineMarks.Services.UT
             //arange
             _subjectName = string.Empty;
 
-            //act /asert
-            _service.Add(_subjectName, _profesorName);
-
-            _professorRepository.Verify(x => x.GetByName(It.IsAny<string>()), Times.Once);
-
             Assert.ThrowsException<ArgumentNullException>(() => _service.Add(_subjectName, _profesorName));
+
         }
 
         [TestMethod]
