@@ -36,6 +36,7 @@ namespace OnlineMarks.Api.Controllers
         public IActionResult Add([FromBody] SubjectView subjectView)
         {
             _subjectService.Add(subjectView.Name, subjectView.Professor);
+            //return CreatedAtRoute("Add Subject", new { id = subjectView.Name }, subjectView);
             return Ok("You have successfully added " + subjectView.Name + "!");
         }
 

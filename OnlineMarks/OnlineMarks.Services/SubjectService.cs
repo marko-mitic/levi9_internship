@@ -27,7 +27,7 @@ namespace OnlineMarks.Services
             _studentRepository = studentRepository;
             _studentSubjectRepository = studentSubjectRepository;
         }
-        public void Add(string subjectName, string professorName)
+        public Subject Add(string subjectName, string professorName)
         {
             if (string.IsNullOrWhiteSpace(subjectName))
             {
@@ -41,19 +41,40 @@ namespace OnlineMarks.Services
 
             var professor = _professorRepository.GetByName(professorName);
 
-            if(professor == null)
+            if (professor == null)
             {
                 throw new KeyNotFoundException($"Professor with name {professorName} not found");
             }
 
             var subject = new Subject() { Name = subjectName, Id = Guid.NewGuid(), Professor = professor };
             _subjectRepository.Add(subject);
+
+            return subject;
         }
 
-        public void AddStudent(string subjectName, string studentName)
+        public StudentSubject AddStudent(string subjectName, string studentName)
         {
+            if (string.IsNullOrWhiteSpace(subjectName))
+            {
+                throw new ArgumentNullException($"{nameof(subjectName)} is empty");
+            }
+
+            if (string.IsNullOrWhiteSpace(studentName))
+            {
+                throw new ArgumentNullException($"{nameof(studentName)} is empty");
+            }
+
             var subject = _subjectRepository.GetByName(subjectName);
+            if (subject == null)
+            {
+                throw new KeyNotFoundException($"Subject with name {subject} not found");
+            }
+
             var student = _studentRepository.GetByName(studentName);
+            if (student == null)
+            {
+                throw new KeyNotFoundException($"Student with name {student} not found");
+            }
 
             var studentSubject = new StudentSubject() { Student = student, StudentId = student.Id, Subject = subject, SubjectId = subject.Id };
 
@@ -61,6 +82,8 @@ namespace OnlineMarks.Services
             student.StudentSubjects.Add(studentSubject);
 
             _subjectRepository.SaveChanges();
+
+            return studentSubject;
         }
 
         public IEnumerable<SubjectView> GetAll()
@@ -73,16 +96,36 @@ namespace OnlineMarks.Services
 
         public SubjectView GetById(Guid id)
         {
+            if (string.IsNullOrWhiteSpace(id.ToString()))
+            {
+                throw new ArgumentNullException($"{nameof(id)} is empty");
+            }
+
             var subject = _subjectRepository.Get(id);
-            subject.StudentSubjects = _studentSubjectRepository.GetAll(subject.Id);
+            if (subject == null)
+            {
+                throw new KeyNotFoundException($"Subject with name {subject} not found");
+            }
+
+            subject.StudentSubjects = _studentSubjectRepository.GetAll(subject.Id); // can return null
 
             return _subjectViewUserMap.Translate(subject);
         }
 
         public SubjectView GetByName(string name)
         {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                throw new ArgumentNullException($"{nameof(name)} is empty");
+            }
+
             var subject = _subjectRepository.GetByName(name);
-            subject.StudentSubjects = _studentSubjectRepository.GetAll(subject.Id);
+            if (subject == null)
+            {
+                throw new KeyNotFoundException($"Subject with name {subject} not found");
+            }
+
+            subject.StudentSubjects = _studentSubjectRepository.GetAll(subject.Id); // can return null
 
             return _subjectViewUserMap.Translate(subject);
         }
