@@ -85,15 +85,16 @@ namespace OnlineMarks.Api
         {
             //app.UseMvc();
 
-             app.UseCors(builder =>
+            app.UseCors(builder =>
             {
                 builder.AllowAnyOrigin();
             });
 
+            app.UseDefaultFiles();
             app.UseStaticFiles();
-                    app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
-         
+
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
