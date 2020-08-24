@@ -1,4 +1,5 @@
-﻿using OnlineMarks.Data.ViewModels.Subjects;
+﻿using OnlineMarks.Data.Models;
+using OnlineMarks.Data.ViewModels.Subjects;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,7 +10,7 @@ namespace OnlineMarks.Interfaces.Services
     {
         IEnumerable<SubjectView> GetAll();
         SubjectView GetById(Guid id);
-        void Add(string name, string professorName);
+        Subject Add(string name, string professorName);
         SubjectView GetByName(string name);
     }
 }

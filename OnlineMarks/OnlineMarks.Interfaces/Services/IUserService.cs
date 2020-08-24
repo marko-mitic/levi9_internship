@@ -12,7 +12,7 @@ namespace OnlineMarks.Interfaces.Services
         UserView Authenticate(AuthenticateModel model);
         IEnumerable<UserView> GetAll();
         UserView GetById(Guid id);
-        void Add(string username, string password, string role);
+        User Add(string username, string password, string role);
 
     }
 }

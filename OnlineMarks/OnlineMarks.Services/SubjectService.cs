@@ -21,12 +21,26 @@ namespace OnlineMarks.Services
             _subjectViewUserMap = subjectViewUserMap;
             _professorRepository = professorRepository;
         }
-        public void Add(string name, string professorName)
+        public Subject Add(string name, string professorName)
         {
+            if (name == null)
+                throw new ArgumentNullException(name);
+            if (name == "")
+                throw new ArgumentOutOfRangeException(name);
+            if (professorName == null)
+                throw new ArgumentNullException(professorName);
+            if (professorName == "")
+                throw new ArgumentOutOfRangeException(professorName);
+
             var professor = _professorRepository.GetByName(professorName);
+
+            if (professor == null)
+                return null;
 
             var subject = new Subject() { Name = name, Id = Guid.NewGuid(), Professor = professor };
             _subjectRepository.Add(subject);
+
+            return subject;
         }
 
         public IEnumerable<SubjectView> GetAll()
@@ -37,13 +51,29 @@ namespace OnlineMarks.Services
 
         public SubjectView GetById(Guid id)
         {
+            if (id == null)
+                throw new ArgumentNullException(id.ToString());
+
             var subject = _subjectRepository.Get(id);
+
+            if (subject == null)
+                return null;
+
             return _subjectViewUserMap.Translate(subject);
         }
 
         public SubjectView GetByName(string name)
         {
+            if (name == null)
+                throw new ArgumentNullException(name);
+            if (name == "")
+                throw new ArgumentOutOfRangeException(name);
+
             var subject = _subjectRepository.GetByUsername(name);
+
+            if (subject == null)
+                return null;
+
             return _subjectViewUserMap.Translate(subject);
         }
     }
