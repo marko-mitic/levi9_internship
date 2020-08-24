@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Api\\OnlineMarks.Api.csproj": {}
+    "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Api\\OnlineMarks.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Api\\OnlineMarks.Api.csproj": {
+    "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Api\\OnlineMarks.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Api\\OnlineMarks.Api.csproj",
+        "projectUniqueName": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Api\\OnlineMarks.Api.csproj",
         "projectName": "OnlineMarks.Api",
-        "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Api\\OnlineMarks.Api.csproj",
-        "packagesPath": "C:\\Users\\Ja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Api\\obj\\",
+        "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Api\\OnlineMarks.Api.csproj",
+        "packagesPath": "C:\\Users\\m.mitic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.mitic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,20 +27,20 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj"
               },
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj"
               },
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\OnlineMarks.Maps.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\OnlineMarks.Maps.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\OnlineMarks.Maps.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\OnlineMarks.Maps.csproj"
               },
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj"
               },
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj"
               }
             }
           }
@@ -99,21 +99,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
+    "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj",
+        "projectUniqueName": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj",
         "projectName": "OnlineMarks.Data.Models",
-        "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj",
-        "packagesPath": "C:\\Users\\Ja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\obj\\",
+        "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj",
+        "packagesPath": "C:\\Users\\m.mitic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.mitic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -126,8 +126,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj"
               }
             }
           }
@@ -185,21 +185,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj": {
+    "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj",
+        "projectUniqueName": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj",
         "projectName": "OnlineMarks.Data.Repositories",
-        "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj",
-        "packagesPath": "C:\\Users\\Ja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\obj\\",
+        "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj",
+        "packagesPath": "C:\\Users\\m.mitic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.mitic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -212,11 +212,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj"
               },
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj"
               }
             }
           }
@@ -260,21 +260,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.ViewModels\\OnlineMarks.Data.ViewModels.csproj": {
+    "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.ViewModels\\OnlineMarks.Data.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.ViewModels\\OnlineMarks.Data.ViewModels.csproj",
+        "projectUniqueName": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.ViewModels\\OnlineMarks.Data.ViewModels.csproj",
         "projectName": "OnlineMarks.Data.ViewModels",
-        "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.ViewModels\\OnlineMarks.Data.ViewModels.csproj",
-        "packagesPath": "C:\\Users\\Ja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.ViewModels\\obj\\",
+        "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.ViewModels\\OnlineMarks.Data.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\m.mitic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.mitic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -287,11 +287,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj"
               },
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj"
               }
             }
           }
@@ -325,21 +325,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj": {
+    "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj",
         "projectName": "OnlineMarks.Interfaces",
-        "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj",
-        "packagesPath": "C:\\Users\\Ja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\obj\\",
+        "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\m.mitic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.mitic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -352,11 +352,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj"
               },
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.ViewModels\\OnlineMarks.Data.ViewModels.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.ViewModels\\OnlineMarks.Data.ViewModels.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.ViewModels\\OnlineMarks.Data.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.ViewModels\\OnlineMarks.Data.ViewModels.csproj"
               }
             }
           }
@@ -384,21 +384,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\OnlineMarks.Maps.csproj": {
+    "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\OnlineMarks.Maps.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\OnlineMarks.Maps.csproj",
+        "projectUniqueName": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\OnlineMarks.Maps.csproj",
         "projectName": "OnlineMarks.Maps",
-        "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\OnlineMarks.Maps.csproj",
-        "packagesPath": "C:\\Users\\Ja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\obj\\",
+        "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\OnlineMarks.Maps.csproj",
+        "packagesPath": "C:\\Users\\m.mitic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.mitic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -411,8 +411,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj"
               }
             }
           }
@@ -440,21 +440,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj": {
+    "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj",
+        "projectUniqueName": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj",
         "projectName": "OnlineMarks.Services",
-        "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj",
-        "packagesPath": "C:\\Users\\Ja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\obj\\",
+        "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj",
+        "packagesPath": "C:\\Users\\m.mitic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.mitic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -467,14 +467,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj"
               },
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj"
               },
-              "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj": {
-                "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj"
               }
             }
           }
@@ -502,21 +502,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj": {
+    "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj",
+        "projectUniqueName": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj",
         "projectName": "OnlineMarks.Tools",
-        "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj",
-        "packagesPath": "C:\\Users\\Ja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\obj\\",
+        "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj",
+        "packagesPath": "C:\\Users\\m.mitic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\m.mitic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -564,7 +564,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

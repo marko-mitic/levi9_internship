@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\OnlineMarks"
+    "\\OnlineMarks",
+    "\\OnlineMarks\\OnlineMarks.Services"
   ],
-  "SelectedNode": "\\OnlineMarks\\OnlineMarks.sln",
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
