@@ -16,6 +16,7 @@ using OnlineMarks.Services;
 using OnlineMarks.Tools.ConfigurationObjects;
 using OnlineMarks.Tools.Auth;
 using MySQL.Data.EntityFrameworkCore;
+using OnlineMarks.Maps.SubjectMap;
 
 namespace OnlineMarks.Api
 {
@@ -69,14 +70,24 @@ namespace OnlineMarks.Api
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserViewUserMap, UserViewUserMap>();
 
+            services.AddScoped<ISubjectRepository, SubjectRepository>();
+            services.AddScoped<ISubjectViewSubjectMap, SubjectViewSubjectMap>();
+            services.AddScoped<ISubjectService, SubjectService>();
+
+            services.AddScoped<IProfessorRepository, ProfessorRepository>();
+
+            services.AddScoped<IStudentRepository, StudentRepository>();
+
+            services.AddScoped<IStudentSubjectRepository, StudentSubjectRepository>();
+
+            services.AddControllers().AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ApplicationContext applicationContext)
         {
-            //app.UseMvc();
-
-         
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();

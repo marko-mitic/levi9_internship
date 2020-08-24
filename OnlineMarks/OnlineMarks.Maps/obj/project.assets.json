@@ -2046,6 +2046,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "OnlineMarks.Data.Models": "1.0.0",
           "OnlineMarks.Tools": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "6.7.1"
         },
@@ -6953,19 +6954,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\m.mitic\\.nuget\\packages\\": {}
+    "C:\\Users\\Ja\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\OnlineMarks.Maps.csproj",
+      "projectUniqueName": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\OnlineMarks.Maps.csproj",
       "projectName": "OnlineMarks.Maps",
-      "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\OnlineMarks.Maps.csproj",
-      "packagesPath": "C:\\Users\\m.mitic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\obj\\",
+      "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\OnlineMarks.Maps.csproj",
+      "packagesPath": "C:\\Users\\Ja\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Maps\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\m.mitic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6978,8 +6979,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj": {
-              "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj"
+            "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\Ja\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Interfaces\\OnlineMarks.Interfaces.csproj"
             }
           }
         }
@@ -7007,7 +7008,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -23,7 +23,7 @@ namespace OnlineMarks.Api.Controllers
         }
 
         [AllowAnonymous]
-        [HttpGet("getAll")]
+        [HttpGet("all")]
         public IActionResult GetAll()
         {
             var users = _userService.GetAll();
@@ -38,8 +38,8 @@ namespace OnlineMarks.Api.Controllers
             return Ok(users);
         }
 
-        [Authorize(Roles = UserRole.Admin)]
-        [HttpPost]
+        [AllowAnonymous]
+        [HttpPost("add")]
         public IActionResult Add([FromBody] AuthenticateModel model)
         {
             _userService.Add(model.Username, model.Password, model.Role);
@@ -47,7 +47,7 @@ namespace OnlineMarks.Api.Controllers
         }
 
         [AllowAnonymous]
-        [HttpGet("get")]
+        [HttpGet]
         public IActionResult Get()
         {
             var identity = HttpContext.User.Identity as ClaimsIdentity;
