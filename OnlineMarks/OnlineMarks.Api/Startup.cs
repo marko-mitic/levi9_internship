@@ -14,6 +14,8 @@ using OnlineMarks.Interfaces.Services;
 using OnlineMarks.Maps.UserMap;
 using OnlineMarks.Services;
 using OnlineMarks.Tools.ConfigurationObjects;
+using OnlineMarks.Tools.Auth;
+using MySQL.Data.EntityFrameworkCore;
 
 namespace OnlineMarks.Api
 {
@@ -32,7 +34,7 @@ namespace OnlineMarks.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationContext>
-                (options => options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
+                (options => options.UseMySQL(_configuration.GetConnectionString("DefaultConnection")));
 
             //services.AddCors();
             services.AddControllers();
@@ -61,8 +63,8 @@ namespace OnlineMarks.Api
                 };
             });
 
-            //services.AddMvc(option => option.EnableEndpointRouting = false);
-            //services.AddControllers(options => options.EnableEndpointRouting = false);
+            services.AddScoped<IAuthManager, AuthManager>();
+
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUserViewUserMap, UserViewUserMap>();

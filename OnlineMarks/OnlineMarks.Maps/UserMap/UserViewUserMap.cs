@@ -14,7 +14,7 @@ namespace OnlineMarks.Maps.UserMap
             if (user == null)
                 return null;
 
-            var temp = new UserView() { Name = user.UserName };
+            var temp = new UserView() { Name = user.Name, Role = user.Role.ToString() };
             return temp;
         }
 

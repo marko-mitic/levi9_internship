@@ -10,6 +10,6 @@ namespace OnlineMarks.Interfaces.Repository
         void Add(User user);
         User Get(Guid userId);
         List<User> GetAll();
-        User Authenticate(string username, string password);
+        User GetByUsername(string username);
     }
 }
