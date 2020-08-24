@@ -55,6 +55,7 @@ namespace OnlineMarks.Services
             {
                 var user = new Parent() { Name = username, PasswordHash = passwordHash, PasswordSalt = passwordSalt, Id = Guid.NewGuid() };
                 _userRepository.Add(user);
+                return user;
             }
             else if (UserRole.Professor == role)
             {
