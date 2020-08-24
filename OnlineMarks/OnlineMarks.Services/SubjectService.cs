@@ -5,6 +5,7 @@ using OnlineMarks.Interfaces.Repository;
 using OnlineMarks.Interfaces.Services;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace OnlineMarks.Services
@@ -15,14 +16,16 @@ namespace OnlineMarks.Services
         private readonly ISubjectViewSubjectMap _subjectViewUserMap;
         private readonly IProfessorRepository _professorRepository;
         private readonly IStudentRepository _studentRepository;
+        private readonly IStudentSubjectRepository _studentSubjectRepository;
 
         public SubjectService(ISubjectRepository subjectRepository, ISubjectViewSubjectMap subjectViewUserMap,
-            IProfessorRepository professorRepository, IStudentRepository studentRepository)
+            IProfessorRepository professorRepository, IStudentRepository studentRepository, IStudentSubjectRepository studentSubjectRepository)
         {
             _subjectRepository = subjectRepository;
             _subjectViewUserMap = subjectViewUserMap;
             _professorRepository = professorRepository;
             _studentRepository = studentRepository;
+            _studentSubjectRepository = studentSubjectRepository;
         }
         public void Add(string subjectName, string professorName)
         {
@@ -48,18 +51,24 @@ namespace OnlineMarks.Services
         public IEnumerable<SubjectView> GetAll()
         {
             var subjectList = _subjectRepository.GetAll();
+            subjectList.ForEach(x => x.StudentSubjects = _studentSubjectRepository.GetAll(x.Id));
+
             return _subjectViewUserMap.Translate(subjectList);
         }
 
         public SubjectView GetById(Guid id)
         {
             var subject = _subjectRepository.Get(id);
+            subject.StudentSubjects = _studentSubjectRepository.GetAll(subject.Id);
+
             return _subjectViewUserMap.Translate(subject);
         }
 
         public SubjectView GetByName(string name)
         {
             var subject = _subjectRepository.GetByName(name);
+            subject.StudentSubjects = _studentSubjectRepository.GetAll(subject.Id);
+
             return _subjectViewUserMap.Translate(subject);
         }
     }

@@ -57,6 +57,7 @@ namespace OnlineMarks.Data.Models.Context
         public DbSet<Professor> Professors { get; set; }
         public DbSet<Parent> Parents { get; set; }
         public DbSet<Admin> Admins { get; set; }
+        public DbSet<StudentSubject> StudentSubjects { get; set; }
 
         public new void SaveChanges()
         {

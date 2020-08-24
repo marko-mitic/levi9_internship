@@ -4,9 +4,9 @@ using System.Text;
 
 namespace OnlineMarks.Data.ViewModels.Subjects
 {
-    public class SubjectStudentView
+    public class SubjectStudentInputView
     {
-        public Guid StudentId { get; set; }
+        public string SubjectName { get; set; }
         public string StudentName { get; set; }
     }
 }
