@@ -7,6 +7,8 @@ C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Api\bin\D
 C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Api\bin\Debug\netcoreapp3.1\OnlineMarks.Api.runtimeconfig.dev.json
 C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Api\bin\Debug\netcoreapp3.1\OnlineMarks.Api.dll
 C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Api\bin\Debug\netcoreapp3.1\OnlineMarks.Api.pdb
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Api\bin\Debug\netcoreapp3.1\OnlineMarks.Api.Views.dll
+C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Api\bin\Debug\netcoreapp3.1\OnlineMarks.Api.Views.pdb
 C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Api\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
 C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Api\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
 C:\Users\m.mitic\Source\Repos\levi9_internship\OnlineMarks\OnlineMarks.Api\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll

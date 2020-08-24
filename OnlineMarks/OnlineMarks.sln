@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMarks.Services", "Onl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineMarks.Tools", "OnlineMarks.Tools\OnlineMarks.Tools.csproj", "{A885FBC2-BEAF-4685-92F4-E1F9AF11520E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineMarks.Service.UT", "OnlineMarks.Service.UT\OnlineMarks.Service.UT.csproj", "{22426CF7-9E37-4FB8-9BA0-1CBF4EF3AA6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{A885FBC2-BEAF-4685-92F4-E1F9AF11520E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A885FBC2-BEAF-4685-92F4-E1F9AF11520E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A885FBC2-BEAF-4685-92F4-E1F9AF11520E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22426CF7-9E37-4FB8-9BA0-1CBF4EF3AA6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22426CF7-9E37-4FB8-9BA0-1CBF4EF3AA6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22426CF7-9E37-4FB8-9BA0-1CBF4EF3AA6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22426CF7-9E37-4FB8-9BA0-1CBF4EF3AA6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

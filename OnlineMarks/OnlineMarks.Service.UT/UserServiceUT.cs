@@ -20,10 +20,10 @@ namespace OnlineMarks.Services.UT
 
         public string _profesorName;
 
-        private  Mock<ISubjectRepository> _subjectRepositoryMock;
-        private  Mock<ISubjectViewSubjectMap> _subjectViewUserMap;
-        private  Mock<IProfessorRepository> _professorRepository;
-        private  Mock<IStudentRepository> _studentRepository;
+        private Mock<ISubjectRepository> _subjectRepositoryMock;
+        private Mock<ISubjectViewSubjectMap> _subjectViewUserMap;
+        private Mock<IProfessorRepository> _professorRepository;
+        private Mock<IStudentRepository> _studentRepository;
 
 
         [TestInitialize]
@@ -69,7 +69,7 @@ namespace OnlineMarks.Services.UT
 
             _professorRepository.Verify(x => x.GetByName(It.IsAny<string>()), Times.Once);
 
-            Assert.ThrowsException<ArgumentNullException>( () => _service.Add(_subjectName, _profesorName));
+            Assert.ThrowsException<ArgumentNullException>(() => _service.Add(_subjectName, _profesorName));
         }
 
         [TestMethod]
