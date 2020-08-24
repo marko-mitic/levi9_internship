@@ -20,7 +20,7 @@
     <ProjectReference Include="..\OnlineMarks.Interfaces\OnlineMarks.Interfaces.csproj" />
     <ProjectReference Include="..\OnlineMarks.Maps\OnlineMarks.Maps.csproj" />
     <ProjectReference Include="..\OnlineMarks.Services\OnlineMarks.Services.csproj" />
-    <ProjectReference Include="..\OnlineMarks.Services\OnlineMarks.Tools.csproj" />
+    <ProjectReference Include="..\OnlineMarks.Tools\OnlineMarks.Tools.csproj" />
   </ItemGroup>
 
   <ProjectExtensions>

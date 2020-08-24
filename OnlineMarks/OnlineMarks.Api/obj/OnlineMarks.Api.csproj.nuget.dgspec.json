@@ -39,8 +39,8 @@
               "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj": {
                 "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Services.csproj"
               },
-              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Tools.csproj": {
-                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Services\\OnlineMarks.Tools.csproj"
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj"
               }
             }
           }
@@ -463,11 +463,11 @@
               "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
                 "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj"
               },
-              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Tools.csproj": {
-                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Tools.csproj"
-              },
               "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj": {
                 "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj"
+              },
+              "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj": {
+                "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj"
               }
             }
           }

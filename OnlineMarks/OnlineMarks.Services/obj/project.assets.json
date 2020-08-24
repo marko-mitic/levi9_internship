@@ -6970,9 +6970,9 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Tools.csproj",
       "OnlineMarks.Data.Models >= 1.0.0",
-      "OnlineMarks.Data.Repositories >= 1.0.0"
+      "OnlineMarks.Data.Repositories >= 1.0.0",
+      "OnlineMarks.Tools >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7004,11 +7004,11 @@
             "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj": {
               "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Data.Models.csproj"
             },
-            "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Tools.csproj": {
-              "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Tools.csproj"
-            },
             "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj": {
               "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Repositories\\OnlineMarks.Data.Repositories.csproj"
+            },
+            "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj": {
+              "projectPath": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Tools\\OnlineMarks.Tools.csproj"
             }
           }
         }
@@ -7039,16 +7039,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Tools.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\m.mitic\\Source\\Repos\\levi9_internship\\OnlineMarks\\OnlineMarks.Data.Models\\OnlineMarks.Tools.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    }
-  ]
+  }
 }
