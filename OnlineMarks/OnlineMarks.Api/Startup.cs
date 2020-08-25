@@ -90,9 +90,10 @@ namespace OnlineMarks.Api
                 builder.AllowAnyOrigin();
             });
 
+            app.UseHttpsRedirection();
+
             app.UseDefaultFiles();
             app.UseStaticFiles();
-            app.UseHttpsRedirection();
 
 
             app.UseRouting();
