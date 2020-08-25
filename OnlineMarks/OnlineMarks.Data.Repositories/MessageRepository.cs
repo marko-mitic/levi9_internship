@@ -4,7 +4,6 @@ using OnlineMarks.Interfaces.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace OnlineMarks.Data.Repositories
 {
@@ -20,6 +19,8 @@ namespace OnlineMarks.Data.Repositories
             return _applicationContext.Messages.FirstOrDefault(x => x.Id == id);
         }
 
-        
+        public IEnumerable<Message> GetByNames(string senderName, string receiverName){
+            return _applicationContext.Messages.Where(x => x.Sender.Name == senderName || x.Receiver.Name == receiverName).OrderBy(x => x.TimeSent);
+        }
     }
 }
