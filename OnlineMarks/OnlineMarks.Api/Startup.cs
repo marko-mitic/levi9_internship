@@ -67,6 +67,7 @@ namespace OnlineMarks.Api
             services.AddSignalR();
 
             services.AddScoped<IAuthManager, AuthManager>();
+            services.AddScoped<IPaginationHelper, PaginationHelper>();
 
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();
