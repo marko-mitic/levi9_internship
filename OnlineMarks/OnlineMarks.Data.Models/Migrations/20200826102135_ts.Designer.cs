@@ -9,8 +9,8 @@ using OnlineMarks.Data.Models.Context;
 namespace OnlineMarks.Data.Models.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    [Migration("20200820084158_unique_subject_name")]
-    partial class unique_subject_name
+    [Migration("20200826102135_ts")]
+    partial class ts
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -50,7 +50,7 @@ namespace OnlineMarks.Data.Models.Migrations
 
                     b.HasIndex("SubjectId");
 
-                    b.ToTable("StudentSubject");
+                    b.ToTable("StudentSubjects");
                 });
 
             modelBuilder.Entity("OnlineMarks.Data.Models.Subject", b =>
@@ -160,7 +160,6 @@ namespace OnlineMarks.Data.Models.Migrations
                     b.HasBaseType("OnlineMarks.Data.Models.User");
 
                     b.Property<byte[]>("ParentId")
-                        .IsRequired()
                         .HasColumnType("varbinary(16)");
 
                     b.HasIndex("ParentId");
@@ -218,9 +217,7 @@ namespace OnlineMarks.Data.Models.Migrations
                 {
                     b.HasOne("OnlineMarks.Data.Models.Parent", "Parent")
                         .WithMany("Children")
-                        .HasForeignKey("ParentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ParentId");
                 });
 #pragma warning restore 612, 618
         }

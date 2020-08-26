@@ -97,7 +97,7 @@ namespace OnlineMarks.Api
                 endpoints.MapControllers();
             });
 
-            applicationContext.Database.EnsureCreated();
+            applicationContext.Database.Migrate();
         }
     }
 }

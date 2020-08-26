@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace OnlineMarks.Data.Models.Migrations
 {
-    public partial class unique_subject_name : Migration
+    public partial class ts : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -28,7 +28,7 @@ namespace OnlineMarks.Data.Models.Migrations
                         column: x => x.ParentId,
                         principalTable: "Users",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -52,7 +52,7 @@ namespace OnlineMarks.Data.Models.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "StudentSubject",
+                name: "StudentSubjects",
                 columns: table => new
                 {
                     StudentId = table.Column<byte[]>(nullable: false),
@@ -60,15 +60,15 @@ namespace OnlineMarks.Data.Models.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_StudentSubject", x => new { x.StudentId, x.SubjectId });
+                    table.PrimaryKey("PK_StudentSubjects", x => new { x.StudentId, x.SubjectId });
                     table.ForeignKey(
-                        name: "FK_StudentSubject_Users_StudentId",
+                        name: "FK_StudentSubjects_Users_StudentId",
                         column: x => x.StudentId,
                         principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_StudentSubject_Subjects_SubjectId",
+                        name: "FK_StudentSubjects_Subjects_SubjectId",
                         column: x => x.SubjectId,
                         principalTable: "Subjects",
                         principalColumn: "Id",
@@ -125,8 +125,8 @@ namespace OnlineMarks.Data.Models.Migrations
                 column: "SubjectGradeId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_StudentSubject_SubjectId",
-                table: "StudentSubject",
+                name: "IX_StudentSubjects_SubjectId",
+                table: "StudentSubjects",
                 column: "SubjectId");
 
             migrationBuilder.CreateIndex(
@@ -156,7 +156,7 @@ namespace OnlineMarks.Data.Models.Migrations
                 name: "Grade");
 
             migrationBuilder.DropTable(
-                name: "StudentSubject");
+                name: "StudentSubjects");
 
             migrationBuilder.DropTable(
                 name: "SubjectGrades");
