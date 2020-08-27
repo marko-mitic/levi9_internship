@@ -32,6 +32,11 @@ namespace OnlineMarks.Data.Repositories
             return _applicationContext.Users.FirstOrDefault(x => x.Id == userId);
         }
 
+        public User Get(string name)
+        {
+            return _applicationContext.Users.FirstOrDefault(x => x.Name == name);
+        }
+
         public List<User> GetAll()
         {
             return _applicationContext.Users.ToList();

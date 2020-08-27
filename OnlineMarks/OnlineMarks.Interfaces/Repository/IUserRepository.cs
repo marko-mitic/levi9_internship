@@ -9,6 +9,7 @@ namespace OnlineMarks.Interfaces.Repository
     {
         void Add(User user);
         User Get(Guid userId);
+        User Get(string name);
         List<User> GetAll();
         User GetByUsername(string username);
     }
