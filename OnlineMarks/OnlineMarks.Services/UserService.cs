@@ -83,5 +83,9 @@ namespace OnlineMarks.Services
             var user = _userRepository.Get(id);
             return _userViewUserMap.Translate(user);
         }
+
+        public User Get(string name){
+            return _userRepository.Get(name);
+        }
     }
 }
