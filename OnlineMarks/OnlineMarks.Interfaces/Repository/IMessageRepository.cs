@@ -9,5 +9,6 @@ namespace OnlineMarks.Interfaces.Repository
     {
         Message GetById(Guid id);
         IEnumerable<Message> GetByNames(string senderName, string receiverName);
+        void Add(Message message);
     }
 }

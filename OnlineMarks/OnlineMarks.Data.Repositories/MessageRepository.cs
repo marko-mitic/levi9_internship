@@ -22,5 +22,11 @@ namespace OnlineMarks.Data.Repositories
         public IEnumerable<Message> GetByNames(string senderName, string receiverName){
             return _applicationContext.Messages.Where(x => x.Sender.Name == senderName || x.Receiver.Name == receiverName).OrderBy(x => x.TimeSent);
         }
+
+        public void Add(Message message)
+        {
+            _applicationContext.Messages.Add(message);
+            _applicationContext.SaveChanges();
+        }
     }
 }

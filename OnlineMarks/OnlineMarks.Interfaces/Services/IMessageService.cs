@@ -7,7 +7,9 @@ namespace OnlineMarks.Interfaces.Services
 {
     public interface IMessageService
     {
+        
         IEnumerable<Message> GetMessagesPageable(string senderName, string receiverName, int pageNumber, int pageSize);
+        void Add(string senderName, string receiverName, string content);
     }
 
 }
